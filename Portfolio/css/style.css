@@ -1,0 +1,102 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+main {
+  background-color: #F8F6F4;
+}
+
+.page-title {
+  background-color: #F8F6F4;
+  height: 228px;
+  padding: 16px 8px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.page-title h1 {
+  font-size: 80px;
+  font-family: "Baskervville", serif;
+  color: #725A58;
+  width: 991px;
+  height: 78px;
+  line-height: 100%;
+  padding: 0;
+  margin: 0;
+}
+.page-title .border {
+  content: "";
+  margin-top: 16px;
+  width: 200px;
+  border-bottom: solid 1px #E3B6B1;
+}
+.page-title p {
+  width: 585px;
+  height: 54px;
+  font-size: 18px;
+  font-family: "Avenir", sans-serif;
+  color: #191919;
+}
+
+.display {
+  background-color: #FAE9E7;
+  padding: 24px 8px;
+}
+.display .toggle-button {
+  width: 495px;
+  height: 53px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+.display .toggle-button button {
+  width: 242px;
+  height: 100%;
+  padding-bottom: 12px;
+  color: #888888;
+  font-size: 32px;
+  font-family: "Baskervville", serif;
+  background-color: transparent;
+  border: none;
+  border-bottom: solid 2px #888888;
+  cursor: pointer;
+  outline: none;
+  appearance: none;
+}
+.display .toggle-button .toggle-selected {
+  color: #191919;
+  border-color: #191919;
+}
+.display .boxes {
+  width: 1022px;
+  height: 1086px;
+  margin: 16px auto;
+  padding: 16px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+}
+.display .boxes .box {
+  background-color: pink;
+}
+.display .view-more-button {
+  width: 161px;
+  height: 62px;
+  margin: 60px auto;
+}
+.display .view-more-button button {
+  width: 100%;
+  height: 100%;
+  font-family: "Baskervville", serif;
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  cursor: pointer;
+  outline: none;
+  appearance: none;
+}
+
+/*# sourceMappingURL=style.css.map */
