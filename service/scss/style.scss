@@ -1,0 +1,189 @@
+* {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+}
+
+body {
+        font-family: 'Avenir'; 
+        font-weight: 300;
+        background-color: #F8F6F4;
+        color: #191919;
+}
+
+#section-head {
+        text-align: center;
+        margin: 30px 10px;
+        h1 {
+                font-family: 'Baskervville', serif;
+                font-weight: 400;
+                font-style: normal;
+                font-size: 40px;
+                margin-bottom: 24px;
+                letter-spacing: 13%;
+                line-height: 130%;
+                color: #725A58;
+        }
+        h1::after {
+                content: "";
+                display: block;
+                width: 200px;
+                height: 2px;
+                background-color: #E3B6B1;
+                margin: 30px auto 0;
+        }
+        p {
+                width: 328px;
+                height: 52px;
+                display: block;
+                margin: 0 auto;
+        }
+        @media  screen and (min-width:780px) {
+                h1 {
+                        font-size: 80px;
+                        letter-spacing: 13%;
+                }
+                p {
+                        font-size: 18px;
+                        width: 356px;
+                        height: 54px;
+                        display: block;
+                        margin: 0 auto;
+                }
+        }
+}
+
+#section-main {
+        .items {
+                background-color: #FAE9E7;
+                display: flex;
+                flex-direction: column;
+                .item {
+                        .image {
+                                width: 100%;
+                                text-align: center;
+                                margin-bottom: 20px;
+                        }
+                        .service {
+                                margin: 10px;
+                                h2 {
+                                        font-family: 'Baskervville', serif;
+                                        font-weight: 400;
+                                        font-style: normal;
+                                        font-size: 36px;
+                                        margin-bottom: 24px;
+                                        color: #725A58;
+                                }
+                                .price-and-hour {
+                                        .price, .hour {
+                                                margin-bottom: 14px;
+                                                font-size: 16px;
+                                                i {
+                                                        color: #B99692;
+                                                }
+                                                p {
+                                                        display: inline;
+                                                }
+                                                
+                                        }
+                                }
+                                .service-explanation {
+                                        margin-bottom: 24px;
+                                        h3 {
+                                                font-family: 'Baskervville', serif;
+                                                font-weight: 400;
+                                                font-style: normal;
+                                                font-size: 24px;
+                                                margin-bottom: 10px;
+                                        }
+                                }
+                                .btn {
+                                        font-family: 'Baskervville', serif;
+                                        font-weight: 400;
+                                        font-style: normal;
+                                        display: block;
+                                        margin: 0 auto;
+                                        width: 100%;
+                                        font-size: 20px;
+                                        color: #B99692;
+                                        background-color: #FAE9E7;
+                                        border: 1px solid #B99692;
+                                        border-radius: 1px;
+                                        margin-bottom: 24px;
+                                        padding: 15px 0;
+                                }
+                                .btn:hover {
+                                        background-color: #B99692;
+                                        color: #FAE9E7;
+                                        transition: 0.25s;
+                                }
+                        }
+                }
+        }
+        @media screen and (min-width: 780px) {
+                .items {
+                        padding: 5rem;
+                        .item {
+                                display: grid;
+                                grid-template-columns: 1fr 2fr;
+                                .image {
+                                        display: grid;
+                                        justify-items: end;
+                                }
+                                .service {
+                                        margin: 30px;
+                                        h2 {
+                                                font-size: 40px;
+                                        }
+                                        .price-and-hour {
+                                                .price {
+                                                        p {
+                                                                font-size: 18px;
+                                                        }
+                                                }
+                                                .hour {
+                                                        font-size: 18px;
+                                                }
+                                        }
+                                        .service-explanation {
+                                                h3 {
+                                                         margin-bottom: 15px;
+                                                }
+                                                p {
+                                                        font-size: 18px;
+                                                }
+                                        }
+                                        .btn {
+                                                width: 150px;
+                                                display: inline-block;
+                                                justify-content: flex-start;
+                                        }
+                                }
+                        }
+                }
+        }
+        @media screen and (min-width: 1024px) and (min-width: 1440px) {
+                .items {
+                        .item {
+                                .service {
+                                        max-width: 664px;
+                                        max-height: 348px;
+                                        .price-and-hour {
+                                                display: flex;
+                                                flex-direction: row;
+                                                margin-bottom: 15px;
+                                                .price, .hour {
+                                                        i {
+                                                                margin-left: 10px;
+                                                        }
+
+                                                }
+                                        }
+                                        .service-explanation {
+                                                margin-bottom: 20px;
+                                        }
+                                }
+                        }
+                }
+        }
+}
