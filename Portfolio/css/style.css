@@ -132,6 +132,39 @@ main {
   cursor: pointer;
   outline: none;
   appearance: none;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.25s ease;
+}
+.display .view-more-button button:hover {
+  background-color: #eca8a0;
+  transform: translateY(-4px);
+}
+.display .view-more-button button:active {
+  transform: translateY(0);
+}
+.display .view-more-button button::after {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -30%;
+  width: 30%;
+  height: 200%;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.9) 50%, rgba(255, 255, 255, 0) 100%);
+}
+.display .view-more-button .action {
+  background-color: #eca8a0;
+}
+.display .view-more-button .action::after {
+  animation: shine 0.7s ease-out 1 forwards;
+}
+@keyframes shine {
+  0% {
+    transform: translateX(-120%) rotate(25deg);
+  }
+  100% {
+    transform: translateX(600%) rotate(25deg);
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -156,6 +189,9 @@ main {
     grid-template-columns: 100%;
     grid-auto-rows: 240px;
     padding: 40px;
+  }
+  .display .responsive-hidden {
+    display: none;
   }
   .display .view-more-button {
     margin: 20px auto;
