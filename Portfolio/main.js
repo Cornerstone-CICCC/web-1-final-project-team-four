@@ -16,3 +16,9 @@ hairStyleButton.addEventListener("click", () => {
   boxHairStyle.classList.add("box-selected");
   boxMakeup.classList.remove("box-selected");
 });
+
+const viewMoreButton = document.querySelector("#view-more-button");
+const optionalImage = document.querySelector("#optional");
+viewMoreButton.addEventListener("click", () => {
+  optionalImage.classList.remove("responsive-hidden");
+});

@@ -1,3 +1,12 @@
+html,
+body {
+  overflow-x: hidden;
+}
+
+html {
+  scrollbar-gutter: stable both-edges;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -10,7 +19,7 @@ main {
 
 .page-title {
   background-color: #F8F6F4;
-  height: 228px;
+  max-height: 228px;
   padding: 16px 8px;
   text-align: center;
   display: flex;
@@ -21,8 +30,8 @@ main {
   font-size: 80px;
   font-family: "Baskervville", serif;
   color: #725A58;
-  width: 991px;
-  height: 78px;
+  max-width: 991px;
+  max-height: 78px;
   line-height: 100%;
   padding: 0;
   margin: 0;
@@ -35,7 +44,7 @@ main {
   border-bottom: solid 1px #E3B6B1;
 }
 .page-title p {
-  width: 585px;
+  max-width: 585px;
   height: 54px;
   font-size: 18px;
   font-family: "Avenir", sans-serif;
@@ -47,7 +56,7 @@ main {
   padding: 24px 8px;
 }
 .display .toggle-button {
-  width: 495px;
+  max-width: 495px;
   height: 53px;
   margin: 0 auto;
   display: flex;
@@ -72,12 +81,13 @@ main {
   border-color: #191919;
 }
 .display .boxes-makeup {
-  width: 1022px;
-  height: 1086px;
+  max-width: 1022px;
+  height: auto;
   margin: 16px auto;
   padding: 16px;
   display: none;
   grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 280px;
   gap: 14px;
 }
 .display .boxes-makeup .box {
@@ -88,12 +98,13 @@ main {
   height: 100%;
 }
 .display .boxes-hair-style {
-  width: 1022px;
-  height: 1086px;
+  max-width: 1022px;
+  height: auto;
   margin: 16px auto;
   padding: 16px;
   display: none;
   grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 280px;
   gap: 14px;
 }
 .display .boxes-hair-style .box {
@@ -121,6 +132,34 @@ main {
   cursor: pointer;
   outline: none;
   appearance: none;
+}
+
+@media screen and (max-width: 768px) {
+  .page-title h1 {
+    font-size: 40px;
+    padding-bottom: 0;
+  }
+  .display .boxes-makeup {
+    grid-auto-rows: 200px;
+  }
+  .display .boxes-hair-style {
+    grid-auto-rows: 200px;
+  }
+}
+@media screen and (max-width: 426px) {
+  .display .boxes-makeup {
+    grid-template-columns: 100%;
+    grid-auto-rows: 240px;
+    padding: 40px;
+  }
+  .display .boxes-hair-style {
+    grid-template-columns: 100%;
+    grid-auto-rows: 240px;
+    padding: 40px;
+  }
+  .display .view-more-button {
+    margin: 20px auto;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
