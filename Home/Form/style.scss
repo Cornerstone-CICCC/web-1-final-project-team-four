@@ -1,0 +1,571 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+.canvas {
+  background-color: #F8F6F4;
+  margin: 0;
+  padding: 0;
+
+  .title {
+    max-width: 569px;
+    height: 174px;
+    margin: 0 auto;
+    text-align: center;
+
+    h2 {
+      margin: 0;
+      padding: 0;
+      font-weight: 400;
+      color: #725A58;
+      font-size: 80px;
+      font-family: 'Baskervville', serif;
+      letter-spacing: 12px;
+    }
+
+    p {
+      max-width: 520px;
+      height: 54px;
+      font-size: 18px;
+      margin: 0 auto;
+    }
+  }
+
+  form {
+    max-width: 768px;
+    background-color: #FAE9E7;
+    margin: 48px auto;
+    padding: 80px 0;
+
+    h3 {
+      width: 608px;
+      height: 80px;
+      margin: 0 auto;
+      text-align: center;
+      font-size: 42px;
+      font-family: 'Baskervville', serif;
+      font-weight: 400;
+      border-bottom: solid 1px black;
+    }
+
+    .form_list {
+      max-width: 608px;
+      margin: 40px auto;
+    }
+
+    fieldset {
+      min-width: 0;
+      margin: 0;
+      border: 0;
+      padding: 0;
+    }
+
+    .event-type-field {
+      width: 100%;
+      height: 120px;
+      margin: 0 auto;
+      font-family: 'Baskervville', serif;
+
+      legend {
+        max-width: 180px;
+        height: 42px;
+        font-size: 32px;
+        margin-bottom: 20px;
+      }
+
+      .radio-event-type {
+        height: 55px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: end;
+        gap: 4px;
+
+        .radio-option {
+          height: 100%;
+          width: 33%;
+          padding: 0 12px;
+          border: solid 1px #725A58;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          font-size: 20px;
+          background-color: #F8F6F4;
+
+          &:hover {
+            cursor: pointer
+          }
+
+          input {
+            display: none;
+          }
+
+          .fa-solid {
+            color: #E3B6B1;
+            font-size: 30px;
+            opacity: 0;
+          }
+
+          .checked {
+            opacity: 1;
+          }
+        }
+      }
+    }
+
+    .time-info {
+      width: 100%;
+      height: 160px;
+      display: flex;
+      margin: 40px 0;
+      gap: 20px;
+      font-family: 'Baskervville', serif;
+
+      .event-date {
+        width: 50%;
+        height: 100%;
+
+        legend {
+          max-width: 180px;
+          height: 42px;
+          font-size: 32px;
+          margin-bottom: 12px;
+        }
+
+        input[type="date"] {
+          height: 55px;
+          width: 100%;
+          margin: 8px 0;
+          padding: 4px 16px;
+        }
+
+        input[type=date]::-webkit-calendar-picker-indicator {
+          &:hover {
+            cursor: pointer
+          }
+        }
+
+        .not-decided {
+          width: 100%;
+          height: 30%;
+          display: flex;
+          align-items: center;
+
+          input[type="checkbox"] {
+            width: 24px;
+            height: 24px;
+            margin: 0;
+            margin-right: 12px;
+          }
+
+          label {
+            width: 90%;
+          }
+        }
+      }
+
+      .event-time {
+        width: 50%;
+        height: 100%;
+
+        legend {
+          max-width: 180px;
+          height: 42px;
+          font-size: 32px;
+          padding-bottom: 8px;
+          margin-bottom: 12px;
+        }
+
+        select {
+          height: 55px;
+          width: 100%;
+          margin: 8px 0;
+          padding: 4px 16px;
+          font-size: 20px;
+
+          &:hover {
+            cursor: pointer
+          }
+        }
+
+        .not-decided {
+          width: 100%;
+          height: 30%;
+          display: flex;
+          align-items: center;
+
+          input[type="checkbox"] {
+            width: 24px;
+            height: 24px;
+            margin: 0;
+            margin-right: 12px;
+          }
+
+          label {
+            width: 90%;
+          }
+        }
+
+
+      }
+    }
+
+    .name-info {
+      margin: 40px 0;
+      padding: 0;
+      font-family: 'Baskervville', serif;
+
+      legend {
+        max-width: 180px;
+        height: 42px;
+        font-size: 32px;
+        margin-bottom: 12px;
+      }
+
+      input[type="text"] {
+        font-size: 18px;
+        width: 100%;
+        height: 48px;
+        padding: 0 8px;
+
+      }
+    }
+
+    .contact-method {
+      width: 100%;
+      font-family: 'Baskervville', serif;
+
+      legend {
+        max-width: 180px;
+        height: 42px;
+        font-size: 32px;
+        margin-bottom: 12px;
+      }
+
+      .radio-options {
+        width: 100%;
+        height: 100%;
+
+        .radio-option {
+          margin-bottom: 12px;
+
+          .radio {
+            margin-bottom: 12px;
+            display: flex;
+            gap: 16px;
+            align-items: center;
+
+            input[type="radio"] {
+              accent-color: #b08682;
+              width: 20px;
+              height: 20px;
+
+              &:hover {
+                cursor: pointer;
+              }
+            }
+
+          }
+
+          .call-info {
+            background-color: gray;
+            display: none;
+            border: solid 1px #B99692;
+            position: relative;
+
+            .fa-angle-down {
+              background-color: white;
+              display: flex;
+              align-items: center;
+              position: absolute;
+              top: 15px;
+              left: 10px;
+              pointer-events: none;
+            }
+
+            select {
+              height: 44px;
+              border: none;
+              appearance: none;
+              padding: 4px 32px;
+              font-size: 20px;
+
+              &:hover {
+                cursor: pointer;
+              }
+
+              &:focus {
+                outline: none;
+              }
+
+              option {
+                height: 40px;
+              }
+            }
+
+            input[type="tel"] {
+              border: none;
+
+              &:focus {
+                outline: none;
+              }
+            }
+          }
+
+          .whatsapp-info {
+            background-color: gray;
+            display: none;
+            border: solid 1px #B99692;
+            position: relative;
+
+            .fa-angle-down {
+              background-color: white;
+              display: flex;
+              align-items: center;
+              position: absolute;
+              top: 15px;
+              left: 10px;
+              pointer-events: none;
+            }
+
+            select {
+              height: 44px;
+              border: none;
+              appearance: none;
+              padding: 4px 32px;
+              font-size: 20px;
+
+              &:hover {
+                cursor: pointer;
+              }
+
+              &:focus {
+                outline: none;
+              }
+
+              option {
+                height: 40px;
+              }
+            }
+
+            input[type="tel"] {
+              border: none;
+
+              &:focus {
+                outline: none;
+              }
+            }
+          }
+
+          .sms-info {
+            background-color: gray;
+            display: none;
+            border: solid 1px #B99692;
+            position: relative;
+
+            .fa-angle-down {
+              background-color: white;
+              display: flex;
+              align-items: center;
+              position: absolute;
+              top: 15px;
+              left: 10px;
+              pointer-events: none;
+            }
+
+            select {
+              height: 44px;
+              border: none;
+              appearance: none;
+              padding: 4px 32px;
+              font-size: 20px;
+
+
+              &:hover {
+                cursor: pointer;
+              }
+
+              &:focus {
+                outline: none;
+              }
+
+              option {
+                height: 40px;
+              }
+            }
+
+            input[type="tel"] {
+              border: none;
+
+              &:focus {
+                outline: none;
+              }
+            }
+          }
+
+          .detail {
+            width: 100%;
+            height: 44px;
+            font-family: 'Baskervville', serif;
+            font-size: 18px;
+            padding: 0 20px;
+            display: none;
+          }
+
+          .detail-checked {
+            display: flex;
+          }
+
+        }
+      }
+    }
+
+    button {
+      font-family: 'Baskervville', serif;
+      width: 160px;
+      height: 82px;
+      margin: 0 auto;
+      padding: 0;
+      color: #5E4A49;
+      font-size: 20px;
+      background-color: transparent;
+      display: block;
+      border: solid 1px #5E4A49;
+      cursor: pointer;
+      outline: none;
+      appearance: none;
+      position: relative;
+      overflow: hidden;
+      transition: all .25s ease;
+
+      // ↓↓↓button animation↓↓↓
+      &::after {
+        content: "";
+        position: absolute;
+        top: -50%;
+        left: -30%;
+        width: 30%;
+        height: 200%;
+        background: linear-gradient(to right,
+            rgba(255, 255, 255, 0) 0%,
+            rgba(255, 255, 255, .9) 50%,
+            rgba(255, 255, 255, 0) 100%);
+      }
+
+      &:hover {
+        background-color: #eca8a0;
+      }
+
+      &:active {
+        transform: translateY(4px);
+      }
+
+      &:hover::after {
+        animation: shine .7s ease-out 1 forwards;
+      }
+
+      @keyframes shine {
+        0% {
+          transform: translateX(-120%) rotate(25deg);
+        }
+
+        100% {
+          transform: translateX(600%) rotate(25deg);
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .canvas {
+    .title {
+      height: auto;
+      margin: 0 auto;
+      padding: 0 16px;
+      padding-top: 32px;
+
+      h2 {
+        width: 100%;
+        font-size: 32px;
+        letter-spacing: 8px;
+        padding-bottom: 8px;
+      }
+
+      p {
+        max-width: 520px;
+        font-size: 12px;
+        line-height: 24px;
+      }
+    }
+
+    form {
+      padding: 40px 12px;
+
+      h3 {
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+        padding-bottom: 4px;
+        font-size: 36px;
+      }
+
+      .event-type-field {
+        height: auto;
+        padding: 0px 0;
+
+        .radio-event-type {
+          height: auto;
+          width: 100%;
+          flex-direction: column;
+          align-items: start;
+          gap: 8px;
+
+          .radio-option {
+            height: 48px;
+            width: 100%;
+          }
+        }
+      }
+
+      .time-info {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        margin: 40px 0;
+        gap: 20px;
+        font-family: 'Baskervville', serif;
+
+        .event-date {
+          width: 100%;
+          height: 100%;
+        }
+
+        .event-time {
+          width: 100%;
+        }
+      }
+
+      .contact-method {
+        width: 100%;
+
+        .radio-options {
+          .radio-option {
+            .detail {
+              font-size: 14px;
+            }
+          }
+        }
+      }
+
+      button {
+        width: 100%;
+        height: 60px;
+      }
+    }
+  }
+}

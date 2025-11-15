@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-..."
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="canvas">
+      <div class="title">
+        <h2>LET'S TALK</h2>
+        <p>
+          Check availability, pricing, and schedule a meeting for your special
+          day or our academy services.
+        </p>
+      </div>
+      <form action="">
+        <h3>Services</h3>
+        <section class="form_list">
+          <fieldset class="event-type-field">
+            <legend>Event Type</legend>
+            <div class="radio-event-type">
+              <label for="wedding" class="radio-option radio-wedding"
+                >Wedding
+                <input
+                  type="radio"
+                  id="wedding"
+                  value="wedding"
+                  name="event-type"
+                  checked
+                />
+                <i
+                  class="fa-solid fa-circle-check checked"
+                  id="wedding-checked"
+                ></i>
+              </label>
+
+              <label for="party" class="radio-option radio-party">
+                Party
+                <input
+                  type="radio"
+                  id="party"
+                  value="party"
+                  name="event-type"
+                />
+                <i class="fa-solid fa-circle-check" id="party-checked"></i>
+              </label>
+
+              <label for="photoshoot" class="radio-option radio-photoshoot">
+                Photoshoot
+                <input
+                  type="radio"
+                  id="photoshoot"
+                  value="photoshoot"
+                  name="event-type"
+                />
+                <i class="fa-solid fa-circle-check" id="photoshoot-checked"></i>
+              </label>
+            </div>
+          </fieldset>
+
+          <div class="time-info">
+            <fieldset class="event-date">
+              <legend>Event Date</legend>
+              <input
+                name="date"
+                type="date"
+                class="event-schedule"
+                required="true"
+              />
+              <div class="not-decided">
+                <input type="checkbox" id="date-not-decided" />
+                <label for="date-not-decided">Not decided</label>
+              </div>
+            </fieldset>
+
+            <fieldset class="event-time">
+              <legend>Event Time</legend>
+              <select id="contact-method" name="contact-method">
+                <option value="full-day">Full day</option>
+                <option value="day-time">Day time</option>
+                <option value="night-time">Night time</option>
+              </select>
+              <div class="not-decided">
+                <input type="checkbox" id="time-not-decided" />
+                <label for="time-not-decided">Not decided</label>
+              </div>
+            </fieldset>
+          </div>
+
+          <fieldset class="name-info">
+            <legend>Name</legend>
+            <input type="text" placeholder="Your name" required />
+          </fieldset>
+
+          <fieldset class="contact-method">
+            <legend>Contact</legend>
+
+            <div class="radio-options">
+              <div class="radio-option">
+                <div class="radio">
+                  <input
+                    type="radio"
+                    id="call"
+                    name="method"
+                    value="call"
+                    checked
+                  />
+                  <label for="call detail-checked">Call</label>
+                </div>
+                <div class="call-info detail-checked">
+                  <i class="fa-solid fa-angle-down"></i>
+                  <select>
+                    <option>+1</option>
+                    <option>+63</option>
+                    <option>+52</option>
+                    <option>+55</option>
+                    <option>+81</option>
+                  </select>
+                  <input
+                    type="tel"
+                    class="detail detail-checked"
+                    id="call-detail"
+                    placeholder="Your call number"
+                    pattern="\d*"
+                    title="only number is accepted"
+                    required="true"
+                  />
+                </div>
+              </div>
+
+              <div class="radio-option">
+                <div class="radio">
+                  <input
+                    type="radio"
+                    id="whatsapp"
+                    name="method"
+                    value="whatsapp"
+                  />
+                  <label for="whatsapp">Whatsapp</label>
+                </div>
+                <div class="whatsapp-info">
+                  <i class="fa-solid fa-angle-down"></i>
+                  <select>
+                    <option>+1</option>
+                    <option>+63</option>
+                    <option>+52</option>
+                    <option>+55</option>
+                    <option>+81</option>
+                  </select>
+                  <input
+                    name="whatsapp"
+                    type="tel"
+                    class="detail detail-checked"
+                    id="whatsapp-detail"
+                    placeholder="Your whatsapp number"
+                    pattern="\d*"
+                    title="only number is accepted"
+                  />
+                </div>
+              </div>
+
+              <div class="radio-option">
+                <div class="radio">
+                  <input type="radio" id="sms" name="method" value="sms" />
+                  <label for="sms">SMS</label>
+                </div>
+                <div class="sms-info">
+                  <i class="fa-solid fa-angle-down"></i>
+                  <select>
+                    <option>+1</option>
+                    <option>+63</option>
+                    <option>+52</option>
+                    <option>+55</option>
+                    <option>+81</option>
+                  </select>
+                  <input
+                    type="tel"
+                    class="detail detail-checked"
+                    id="sms-detail"
+                    placeholder="Your SMS number"
+                    pattern="\d*"
+                    title="only number is accepted"
+                  />
+                </div>
+              </div>
+              <div class="radio-option">
+                <div class="radio">
+                  <input type="radio" id="email" name="method" value="email" />
+                  <label for="email">Email</label>
+                </div>
+                <input
+                  type="email"
+                  class="detail"
+                  id="email-detail"
+                  placeholder="Your email address"
+                  name="email"
+                  pattern=".*@.*\..*"
+                />
+              </div>
+            </div>
+          </fieldset>
+        </section>
+        <button type="submit" class="submit-button">Submit</button>
+      </form>
+    </div>
+    <script src="./app.js"></script>
+  </body>
+</html>
