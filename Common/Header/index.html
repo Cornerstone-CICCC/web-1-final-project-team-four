@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Header</title>
+
+        <link rel="stylesheet" href="./css/style.css">
+        <!-- font awesome -->
+        <script src="https://kit.fontawesome.com/1cca408388.js" crossorigin="anonymous"></script>
+        <!-- google font  -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Baskervville:ital,wght@0,400..700;1,400..700&family=Momo+Trust+Sans:wght@200..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+
+</head>
+<body>
+        <section id="header-section">
+                <nav class="navbar">
+                        <!-- navbar for mobile. This is the default -->
+                        <div class="ham-menu">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                        </div>
+                        <div class="logo logo-mobile">
+                                <a href="#" class="aTag-img">
+                                        <img src="./assets/images/CB Logo Final 1.svg" alt="logo-image" >
+                                </a>
+                        </div>
+                        <div class="insta-icon">
+                                <a href="#" class="aTag-instagram"><i class="fa-brands fa-instagram"></i></a>
+                        </div>
+
+                        <!-- navbar for desktop, display: none; hide them on mobile screen -->
+                         <section class="desktop-screen-nav">
+                                <ul class="navbar-left desktop-nav">
+                                        <li><a href="#">Home</a></li>
+                                        <li><a href="#">My Work</a></li>
+                                        <li><a href="#">Services</a></li>
+                                        <li><a href="#">Classes</a></li>
+                                </ul>
+
+                                <div class="logo desktop-nav">
+                                        <a href="#" class="aTag-img">
+                                                <img src="./assets/images/CB Logo Final 1.svg" alt="logo-image" class="logo-text">
+                                                <img src="./assets/images/logo-no-text.svg" alt="logo-no-text" class="logo-no-text">
+                                        </a>
+                                </div>
+
+                                <ul class="navbar-right desktop-nav"> 
+                                        <li><a href="#">Beauty Tips</a></li>
+                                        <li><a href="#">About</a></li>
+                                        <li><a href="#">Contact</a></li>
+                                        <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                                </ul>
+                         </section>
+
+                </nav>
+
+                <!-- off screen menu for mobile -->
+                <div class="off-screen-menu">
+                        <ul class="menu-list">
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">My Work</a></li>
+                                <li><a href="#">Services</a></li>
+                                <li><a href="#">Classes</a></li>
+                                <li><a href="#">Beauty Tips</a></li>
+                                <li><a href="#">About</a></li>
+                                <li><a href="#">Contact</a></li>
+                        </ul>
+                        <ul class="icons-list">
+                                <li><a href="#"><i class="fa-solid fa-phone"></i></a></li>
+                                <li><a href="#" class="fa-layers fa-fw">
+                                        <i class="fa-regular fa-comment"></i>
+                                </a></li>
+                                <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                        </ul>
+                        <p>Expert Makeup and Hairstyle Studio</p>
+                </div>
+        </section>
+        <script src="./js/script.js"></script>
+</body>
+</html>
