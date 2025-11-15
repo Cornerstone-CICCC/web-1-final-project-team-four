@@ -1,0 +1,149 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Avenir";
+  font-weight: 300;
+  background-color: #FAE9E7;
+  color: #191919;
+}
+body #section-head {
+  text-align: center;
+  margin: 50px auto 20px;
+  height: auto;
+}
+body #section-head h1 {
+  font-family: "Baskervville", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 40px;
+  margin-bottom: 24px;
+  letter-spacing: 13%;
+  line-height: 120%;
+  color: #725A58;
+}
+body #section-head h1::after {
+  content: "";
+  display: block;
+  width: 200px;
+  height: 1px;
+  background-color: #E3B6B1;
+  margin: 15px auto 0;
+}
+body #section-head p {
+  display: block;
+  margin: 0 auto;
+}
+body .div-btn {
+  text-align: center;
+}
+body .div-btn .btn-myWork {
+  font-family: "Baskervville", serif;
+  font-weight: 400;
+  font-style: normal;
+  display: block;
+  margin: 0 auto;
+  width: 160px;
+  height: 53px;
+  font-size: 20px;
+  color: #5E4A49;
+  background-color: #FAE9E7;
+  border: 1px solid #5E4A49;
+  border-radius: 1px;
+  padding: 15px 0;
+}
+body .div-btn .btn-myWork:hover {
+  background-color: #B99692;
+  color: #FAE9E7;
+  border-color: #B99692;
+  transition: 0.25s;
+}
+body #section-myWorks {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12.25px;
+  margin: 30px auto;
+  align-items: center;
+}
+body #section-myWorks .myWork img {
+  width: 100%;
+  height: auto;
+}
+body #section-bottom {
+  margin: 0 auto;
+  margin-bottom: 50px;
+  text-align: center;
+  font-size: 20px;
+}
+body #section-bottom .text img {
+  width: 32px;
+  height: 23.73px;
+}
+body #section-bottom .text p {
+  display: block;
+  margin: 24px 0;
+  font-family: "Baskervville", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+  line-height: 150%;
+  letter-spacing: 0%;
+}
+body #section-bottom .signature {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+  width: 189px;
+  margin: 0 auto;
+  align-items: center;
+}
+@media screen and (min-width: 768px) {
+  body #section-head {
+    height: auto;
+  }
+  body #section-head h1 {
+    font-size: 80px;
+    margin-bottom: 40px;
+    letter-spacing: 13%;
+    line-height: 130%;
+  }
+  body #section-head h1::after {
+    content: "";
+    display: block;
+    width: 200px;
+    height: 1px;
+    background-color: #E3B6B1;
+    margin: 15px auto 0;
+  }
+  body #section-head p {
+    display: block;
+    margin: 0 auto;
+    max-width: 437px;
+    height: 54px;
+  }
+  body .div-btn .btn-myWork {
+    min-width: 160px;
+    height: 62px;
+  }
+  body #section-myWorks {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 22.15px;
+    margin: 50px auto;
+    max-width: 1440px;
+    height: auto;
+  }
+  body #section-myWorks .myWork img {
+    width: 100%;
+    height: auto;
+  }
+  body #section-bottom {
+    max-width: 778px;
+    font-size: 32px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
