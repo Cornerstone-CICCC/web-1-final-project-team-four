@@ -1,0 +1,397 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.canvas {
+  background-color: #F8F6F4;
+  margin: 0;
+  padding: 0;
+}
+.canvas .title {
+  max-width: 569px;
+  height: 174px;
+  margin: 0 auto;
+  text-align: center;
+}
+.canvas .title h2 {
+  margin: 0;
+  padding: 0;
+  font-weight: 400;
+  color: #725A58;
+  font-size: 80px;
+  font-family: "Baskervville", serif;
+  letter-spacing: 12px;
+}
+.canvas .title p {
+  max-width: 520px;
+  height: 54px;
+  font-size: 18px;
+  margin: 0 auto;
+}
+.canvas form {
+  max-width: 768px;
+  background-color: #FAE9E7;
+  margin: 48px auto;
+  padding: 40px 0;
+}
+.canvas form h3 {
+  width: 608px;
+  height: 80px;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 42px;
+  font-family: "Baskervville", serif;
+  font-weight: 400;
+  border-bottom: solid 1px black;
+}
+.canvas form .form_list {
+  max-width: 608px;
+  margin: 40px auto;
+}
+.canvas form fieldset {
+  min-width: 0;
+  margin: 0;
+  border: 0;
+  padding: 0;
+}
+.canvas form .event-type-field {
+  width: 100%;
+  height: 120px;
+  margin: 0 auto;
+  font-family: "Baskervville", serif;
+}
+.canvas form .event-type-field legend {
+  max-width: 180px;
+  height: 42px;
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+.canvas form .event-type-field .radio-event-type {
+  height: 55px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  gap: 4px;
+}
+.canvas form .event-type-field .radio-event-type .radio-option {
+  height: 100%;
+  width: 33%;
+  padding: 0 12px;
+  border: solid 1px #725A58;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 20px;
+  background-color: #F8F6F4;
+}
+.canvas form .event-type-field .radio-event-type .radio-option:hover {
+  cursor: pointer;
+}
+.canvas form .event-type-field .radio-event-type .radio-option input {
+  display: none;
+}
+.canvas form .event-type-field .radio-event-type .radio-option .fa-solid {
+  color: #E3B6B1;
+  font-size: 30px;
+  opacity: 0;
+}
+.canvas form .event-type-field .radio-event-type .radio-option .checked {
+  opacity: 1;
+}
+.canvas form .time-info {
+  width: 100%;
+  height: 160px;
+  display: flex;
+  margin: 40px 0;
+  gap: 20px;
+  font-family: "Baskervville", serif;
+}
+.canvas form .time-info .event-date {
+  width: 50%;
+  height: 100%;
+}
+.canvas form .time-info .event-date legend {
+  max-width: 180px;
+  height: 42px;
+  font-size: 32px;
+  margin-bottom: 12px;
+}
+.canvas form .time-info .event-date input[type=date] {
+  height: 55px;
+  width: 100%;
+  margin: 8px 0;
+  padding: 4px 16px;
+}
+.canvas form .time-info .event-date input[type=date]::-webkit-calendar-picker-indicator:hover {
+  cursor: pointer;
+}
+.canvas form .time-info .event-date .not-decided {
+  width: 100%;
+  height: 30%;
+  display: flex;
+  align-items: center;
+}
+.canvas form .time-info .event-date .not-decided input[type=checkbox] {
+  width: 24px;
+  height: 24px;
+  margin: 0;
+  margin-right: 12px;
+}
+.canvas form .time-info .event-date .not-decided label {
+  width: 90%;
+}
+.canvas form .time-info .event-time {
+  width: 50%;
+  height: 100%;
+}
+.canvas form .time-info .event-time legend {
+  max-width: 180px;
+  height: 42px;
+  font-size: 32px;
+  padding-bottom: 8px;
+  margin-bottom: 12px;
+}
+.canvas form .time-info .event-time select {
+  height: 55px;
+  width: 100%;
+  margin: 8px 0;
+  padding: 4px 16px;
+  font-size: 20px;
+}
+.canvas form .time-info .event-time select:hover {
+  cursor: pointer;
+}
+.canvas form .time-info .event-time .not-decided {
+  width: 100%;
+  height: 30%;
+  display: flex;
+  align-items: center;
+}
+.canvas form .time-info .event-time .not-decided input[type=checkbox] {
+  width: 24px;
+  height: 24px;
+  margin: 0;
+  margin-right: 12px;
+}
+.canvas form .time-info .event-time .not-decided label {
+  width: 90%;
+}
+.canvas form .name-info {
+  margin: 40px 0;
+  padding: 0;
+  font-family: "Baskervville", serif;
+}
+.canvas form .name-info legend {
+  max-width: 180px;
+  height: 42px;
+  font-size: 32px;
+  margin-bottom: 12px;
+}
+.canvas form .name-info input[type=text] {
+  font-size: 18px;
+  width: 100%;
+  height: 48px;
+  padding: 0 8px;
+}
+.canvas form .contact-method {
+  width: 100%;
+  font-family: "Baskervville", serif;
+}
+.canvas form .contact-method legend {
+  max-width: 180px;
+  height: 42px;
+  font-size: 32px;
+  margin-bottom: 12px;
+}
+.canvas form .contact-method .radio-options {
+  width: 100%;
+  height: 100%;
+}
+.canvas form .contact-method .radio-options .radio-option {
+  margin-bottom: 12px;
+}
+.canvas form .contact-method .radio-options .radio-option .radio {
+  margin-bottom: 12px;
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+.canvas form .contact-method .radio-options .radio-option .radio input[type=radio] {
+  accent-color: #b08682;
+  width: 20px;
+  height: 20px;
+}
+.canvas form .contact-method .radio-options .radio-option .radio input[type=radio]:hover {
+  cursor: pointer;
+}
+.canvas form .contact-method .radio-options .radio-option .call-info {
+  background-color: gray;
+  display: none;
+  border: solid 1px #B99692;
+  position: relative;
+}
+.canvas form .contact-method .radio-options .radio-option .call-info .fa-angle-down {
+  background-color: white;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 15px;
+  left: 10px;
+  pointer-events: none;
+}
+.canvas form .contact-method .radio-options .radio-option .call-info select {
+  height: 44px;
+  border: none;
+  appearance: none;
+  padding: 4px 32px;
+  font-size: 20px;
+}
+.canvas form .contact-method .radio-options .radio-option .call-info select:hover {
+  cursor: pointer;
+}
+.canvas form .contact-method .radio-options .radio-option .call-info select:focus {
+  outline: none;
+}
+.canvas form .contact-method .radio-options .radio-option .call-info select option {
+  height: 40px;
+}
+.canvas form .contact-method .radio-options .radio-option .call-info input[type=tel] {
+  border: none;
+}
+.canvas form .contact-method .radio-options .radio-option .call-info input[type=tel]:focus {
+  outline: none;
+}
+.canvas form .contact-method .radio-options .radio-option .whatsapp-info {
+  background-color: gray;
+  display: none;
+  border: solid 1px #B99692;
+  position: relative;
+}
+.canvas form .contact-method .radio-options .radio-option .whatsapp-info .fa-angle-down {
+  background-color: white;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 15px;
+  left: 10px;
+  pointer-events: none;
+}
+.canvas form .contact-method .radio-options .radio-option .whatsapp-info select {
+  height: 44px;
+  border: none;
+  appearance: none;
+  padding: 4px 32px;
+  font-size: 20px;
+}
+.canvas form .contact-method .radio-options .radio-option .whatsapp-info select:hover {
+  cursor: pointer;
+}
+.canvas form .contact-method .radio-options .radio-option .whatsapp-info select:focus {
+  outline: none;
+}
+.canvas form .contact-method .radio-options .radio-option .whatsapp-info select option {
+  height: 40px;
+}
+.canvas form .contact-method .radio-options .radio-option .whatsapp-info input[type=tel] {
+  border: none;
+}
+.canvas form .contact-method .radio-options .radio-option .whatsapp-info input[type=tel]:focus {
+  outline: none;
+}
+.canvas form .contact-method .radio-options .radio-option .sms-info {
+  background-color: gray;
+  display: none;
+  border: solid 1px #B99692;
+  position: relative;
+}
+.canvas form .contact-method .radio-options .radio-option .sms-info .fa-angle-down {
+  background-color: white;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 15px;
+  left: 10px;
+  pointer-events: none;
+}
+.canvas form .contact-method .radio-options .radio-option .sms-info select {
+  height: 44px;
+  border: none;
+  appearance: none;
+  padding: 4px 32px;
+  font-size: 20px;
+}
+.canvas form .contact-method .radio-options .radio-option .sms-info select:hover {
+  cursor: pointer;
+}
+.canvas form .contact-method .radio-options .radio-option .sms-info select:focus {
+  outline: none;
+}
+.canvas form .contact-method .radio-options .radio-option .sms-info select option {
+  height: 40px;
+}
+.canvas form .contact-method .radio-options .radio-option .sms-info input[type=tel] {
+  border: none;
+}
+.canvas form .contact-method .radio-options .radio-option .sms-info input[type=tel]:focus {
+  outline: none;
+}
+.canvas form .contact-method .radio-options .radio-option .detail {
+  width: 100%;
+  height: 44px;
+  font-family: "Baskervville", serif;
+  font-size: 18px;
+  padding: 0 20px;
+  display: none;
+}
+.canvas form .contact-method .radio-options .radio-option .detail-checked {
+  display: flex;
+}
+.canvas form button {
+  font-family: "Baskervville", serif;
+  width: 160px;
+  height: 82px;
+  margin: 0 auto;
+  padding: 0;
+  color: #5E4A49;
+  font-size: 20px;
+  background-color: transparent;
+  display: block;
+  border: solid 1px #5E4A49;
+  cursor: pointer;
+  outline: none;
+  appearance: none;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.25s ease;
+}
+.canvas form button::after {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -30%;
+  width: 30%;
+  height: 200%;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.9) 50%, rgba(255, 255, 255, 0) 100%);
+}
+.canvas form button:hover {
+  background-color: #eca8a0;
+}
+.canvas form button:active {
+  transform: translateY(4px);
+}
+.canvas form button:hover::after {
+  animation: shine 0.7s ease-out 1 forwards;
+}
+@keyframes shine {
+  0% {
+    transform: translateX(-120%) rotate(25deg);
+  }
+  100% {
+    transform: translateX(600%) rotate(25deg);
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
