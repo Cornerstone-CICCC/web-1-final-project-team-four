@@ -77,7 +77,7 @@ body {
   object-fit: cover;
   border-radius: 3px;
   justify-content: center;
-  gap: 14px;
+  gap: 1px;
 }
 
 .image-box-wedding img {
