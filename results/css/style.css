@@ -243,7 +243,7 @@
 #task_2_home_top_page .top-main {
   height: calc(100vh - 196px);
   position: relative;
-  background: url(../../assets/images/background-top.jpg) no-repeat center center/cover;
+  background: url(../../assets/images/background-top.jpg) no-repeat center 20%/cover;
   overflow: hidden;
 }
 @media screen and (max-width: 768px) {

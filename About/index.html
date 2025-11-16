@@ -1,90 +1,145 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About - Carla Beauty</title>
-  <link rel="stylesheet" href="css/styles.css">
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About - Carla Beauty</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
 
-<body>
-  <!-- NAVBAR ( proyecto principal)
-  <nav>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="portfolio.html">My Work</a></li>
-      <li><a href="services.html">Services</a></li>
-      <li><a href="classes.html">Beauty Tips</a></li>
-      <li><a href="about.html" class="active">About</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-  </nav>
-  -->
+  <body>
+    <section id="header-section">
+      <nav class="navbar">
+        <!-- navbar for mobile. This is the default -->
+        <div class="ham-menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="logo logo-mobile">
+          <a href="#" class="aTag-img">
+            <img src="../assets/images/CB Logo Final 1.svg" alt="logo-image" />
+          </a>
+        </div>
+        <div class="insta-icon">
+          <a href="#" class="aTag-instagram"
+            ><i class="fa-brands fa-instagram"></i
+          ></a>
+        </div>
 
-  <main class="about-container">
+        <!-- navbar for desktop, display: none; hide them on mobile screen -->
+        <section class="desktop-screen-nav">
+          <ul class="navbar-left desktop-nav">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">My Work</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Classes</a></li>
+          </ul>
 
-    <section class="about-header">
-      <h1>ABOUT<br><span>CARLA BEAUTY</span></h1>
-    </section>
+          <div class="logo desktop-nav">
+            <a href="#" class="aTag-img">
+              <img
+                src="../assets/images/CB Logo Final 1.svg"
+                alt="logo-image"
+                class="logo-text"
+              />
+              <img
+                src="./assets/images/logo-no-text.svg"
+                alt="logo-no-text"
+                class="logo-no-text"
+              />
+            </a>
+          </div>
 
+          <ul class="navbar-right desktop-nav">
+            <li><a href="#">Beauty Tips</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+            <li>
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            </li>
+          </ul>
+        </section>
+      </nav>
 
-<div class="message-box" id="messageBox">
-  <div class="chat-header" onclick="toggleChat()">💬
-  </div>
-  <div class="chat-body" id="chatBody">
-    <p>Hello! How can we help you?</p>
-    <input type="text" placeholder="Type your message..." />
-    <button>Send</button>
-  </div>
-  <script>
-function toggleChat() {
-  const body = document.getElementById("chatBody");
-  body.style.display = body.style.display === "block" ? "none" : "block";
-}
-</script>
-
-</div>
-
-
-    <section class="about-founder">
-      <div class="founder-img">
-        <img src="/web-1-final-project-team-four/images/founder.png" alt="Carla Beatriz">
+      <!-- off screen menu for mobile -->
+      <div class="off-screen-menu">
+        <ul class="menu-list">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">My Work</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Classes</a></li>
+          <li><a href="#">Beauty Tips</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+        <ul class="icons-list">
+          <li>
+            <a href="#"><i class="fa-solid fa-phone"></i></a>
+          </li>
+          <li>
+            <a href="#" class="fa-layers fa-fw">
+              <i class="fa-regular fa-comment"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          </li>
+        </ul>
+        <p>Expert Makeup and Hairstyle Studio</p>
       </div>
-
-      <div class="founder-text">
-        <h2>Hi, I'm Carla Beatriz,<br> the Founder of Carla Beauty.</h2>
-        <p>
-          At <strong>Carla Beauty</strong>, our commitment lies in personalized service
-          that enhances each client’s natural beauty. With a focus on their unique style
-          and skin type, we create custom makeup looks using high-quality products while
-          staying updated on the latest trends.  
-          <br><br>
-          As a L'Oréal certified professional makeup artist with over a decade of
-          experience in Brazil and Canada, my goal is to provide every client with an
-          unforgettable experience that leaves them feeling beautiful and confident.
-        </p>
-        <button class="my-work-btn">My Work</button>
+    </section>
+    <main class="about-container">
+      <section class="about-header">
+        <h1>ABOUT<br /><span>CARLA BEAUTY</span></h1>
+      </section>
+      <div class="message-box" id="messageBox">
+        <div class="chat-body" id="chatBody">
+          <p>Hello! How can we help you?</p>
+          <input type="text" placeholder="Type your message..." />
+          <button>Send</button>
+        </div>
       </div>
-    </section>
+      <section class="about-founder">
+        <div class="founder-img">
+          <img src="./images/founder.png" alt="Carla Beatriz" />
+        </div>
 
-    <section class="about-brands">
-      <h3>Our Brands</h3>
-      <div class="brands-grid">
-        <img src="/web-1-final-project-team-four/images/mac.svg" alt="mac">
-        <img src="/web-1-final-project-team-four/images/lancome.svg" alt="Lancome">
-        <img src="/web-1-final-project-team-four/images/inglot.svg" alt="Inglot">
-        <img src="/web-1-final-project-team-four/images/LauraMercier.svg" alt="Laura Mercier">
-        <img src="/web-1-final-project-team-four/images/charlotteTilbury.svg" alt="Charlotte Tilbury">
-        <img src="/web-1-final-project-team-four/images/tarte.svg" alt="Tarte">
-        <img src="/web-1-final-project-team-four/images/anastacia.svg" alt="anastacia">
-        <img src="/web-1-final-project-team-four/images/kryolan.svg" alt="kryolan"> 
-    
-    </div>
-    </section>
-
-
-  </main>
-<footer></footer>
-  <script src="js/about.js"></script>
-</body>
+        <div class="founder-text">
+          <h2>
+            Hi, I'm Carla Beatriz,<br />
+            the Founder of Carla Beauty.
+          </h2>
+          <p>
+            At <strong>Carla Beauty</strong>, our commitment lies in
+            personalized service that enhances each client’s natural beauty.
+            With a focus on their unique style and skin type, we create custom
+            makeup looks using high-quality products while staying updated on
+            the latest trends. <br /><br />
+            As a L'Oréal certified professional makeup artist with over a decade
+            of experience in Brazil and Canada, my goal is to provide every
+            client with an unforgettable experience that leaves them feeling
+            beautiful and confident.
+          </p>
+          <button class="my-work-btn">My Work</button>
+        </div>
+      </section>
+      <section class="about-brands">
+        <h3>Our Brands</h3>
+        <div class="brands-grid">
+          <img src="./images/mac.svg" alt="mac" />
+          <img src="./images/lancome.svg" alt="Lancome" />
+          <img src="./images/inglot.svg" alt="Inglot" />
+          <img src="./images/LauraMercier.svg" alt="Laura Mercier" />
+          <img src="./images/charlotteTilbury.svg" alt="Charlotte Tilbury" />
+          <img src="./images/tarte.svg" alt="Tarte" />
+          <img src="./images/anastacia.svg" alt="anastacia" />
+          <img src="./images/kryolan.svg" alt="kryolan" />
+        </div>
+      </section>
+    </main>
+    <footer></footer>
+    <script src="../Common/Header/js/script.js  "></script>
+    <script src="js/about.js"></script>
+  </body>
 </html>
