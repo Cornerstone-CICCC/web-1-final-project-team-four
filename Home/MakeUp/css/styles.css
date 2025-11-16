@@ -6,13 +6,13 @@
 }
 
 body {
-  background-color: #F8F6F4;
+  background-color: #f8f6f4;
   text-align: center;
 }
 
 /* HEADER */
 .home-makeup-header {
-  background-color: #F8F6F4;
+  background-color: #f8f6f4;
   text-align: center;
   padding: 2cm 1cm;
 }
@@ -22,7 +22,7 @@ body {
   font-size: 80px;
   font-weight: 400;
   text-transform: uppercase;
-  color: #725A58;
+  color: #725a58;
   margin-bottom: 10px;
 }
 
@@ -37,7 +37,7 @@ body {
 .pink-line {
   width: 200px;
   height: 4px;
-  background-color: #E3B6B1;
+  background-color: #e3b6b1;
   margin: 10px auto;
   border-radius: 2px;
 }
@@ -46,15 +46,15 @@ body {
   font-family: "Baskervville";
   font-weight: 400;
   font-size: 20px;
-  color: #5E4A49;
+  color: #5e4a49;
   letter-spacing: 0%;
   padding: 0.6cm 1.2cm;
-  margin: #5E4A49;
+  margin: #5e4a49;
   align-items: center;
   border-radius: 0%;
   margin-top: 1cm;
   margin-bottom: 1cm;
-  background-color: #F8F6F4;
+  background-color: #f8f6f4;
 }
 
 /* IMAGES */
@@ -98,7 +98,7 @@ body {
   transform: translateX(-50%);
   font-family: "Baskervville";
   font-size: 70px;
-  color: #FAE9E7;
+  color: #fae9e7;
   font-weight: 600;
   display: flex;
   align-items: center;
@@ -116,7 +116,7 @@ span .letter-p {
 
 span .letter-w {
   font-size: 90px;
-  color: #FAE9E7;
+  color: #fae9e7;
   font-weight: 600;
   line-height: 1px;
   margin-left: -10cm;
@@ -134,7 +134,7 @@ span .letter-p2 {
 
 /*makeup101section*/
 .makeup101-section {
-  background-color: #F8E8E5;
+  background-color: #f8e8e5;
   padding: 50px 0;
 }
 .makeup101-section h2 {
@@ -143,7 +143,7 @@ span .letter-p2 {
   margin-bottom: 40px;
   font-size: 32px;
   letter-spacing: 2px;
-  color: #5E4A49;
+  color: #5e4a49;
 }
 
 .class-item span {
@@ -182,7 +182,7 @@ span .letter-p2 {
   gap: 50px;
   max-width: 1200px;
   margin: 0 auto;
-  color: #5E4A49;
+  color: #5e4a49;
   text-align: left;
   font-size: 22px;
 }
@@ -212,10 +212,10 @@ span .letter-p2 {
 .all-classes {
   font-family: "Baskervville";
   font-size: 20px;
-  color: #5E4A49;
+  color: #5e4a49;
   padding: 12px 40px;
   background-color: transparent;
-  border: 1px solid #5E4A49;
+  border: 1px solid #5e4a49;
   cursor: pointer;
   transition: 0.3s ease;
   margin-top: 2cm;
@@ -241,7 +241,7 @@ span .letter-p2 {
 .diy-corner h4 {
   font-family: "Baskervville";
   font-size: 48px;
-  color: #725A58;
+  color: #725a58;
   margin-bottom: 40px;
   letter-spacing: 2px;
   font-weight: 300;
@@ -249,7 +249,7 @@ span .letter-p2 {
 .diy-corner .pink-line2 {
   width: 200px;
   height: 4px;
-  background-color: #E3B6B1;
+  background-color: #e3b6b1;
   opacity: 1;
   margin: 10px auto;
   border: none;
@@ -276,15 +276,15 @@ span .letter-p2 {
 .diy-corner .more-btn {
   margin-top: 40px;
   padding: 0.5cm 1cm;
-  background-color: #F4E0DE;
-  border: 1px #725A58 solid;
+  background-color: #f4e0de;
+  border: 1px #725a58 solid;
   font-family: "Baskervville";
   font-size: 24px;
-  color: #725A58;
+  color: #725a58;
   background-color: transparent;
   cursor: pointer;
   transition: 0.3s ease;
-  margin: 1px #725A58 solid;
+  margin: 1px #725a58 solid;
 }
 .diy-corner .more-btn:hover {
   opacity: 0.8;

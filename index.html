@@ -4,22 +4,434 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="./results/css/style.css" />
+    <!-- font awesome -->
+    <script
+      src="https://kit.fontawesome.com/1cca408388.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- google font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baskervville:ital,wght@0,400..700;1,400..700&family=Momo+Trust+Sans:wght@200..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-..."
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
-    <header>
-      <!-- Put header component here -->
+    <header id="task_1_header">
+      <section id="header-section">
+        <nav class="navbar">
+          <!-- navbar for mobile. This is the default -->
+          <div class="ham-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div class="logo logo-mobile">
+            <a href="#" class="aTag-img">
+              <img src="./assets/images/CB Logo Final 1.svg" alt="logo-image" />
+            </a>
+          </div>
+          <div class="insta-icon">
+            <a href="#" class="aTag-instagram"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+          </div>
+
+          <!-- navbar for desktop, display: none; hide them on mobile screen -->
+          <section class="desktop-screen-nav">
+            <ul class="navbar-left desktop-nav">
+              <li><a href="#">Home</a></li>
+              <li><a href="./Portfolio/index.html">My Work</a></li>
+              <li><a href="./service/index.html">Services</a></li>
+              <li><a href="#">Classes</a></li>
+            </ul>
+
+            <div class="logo desktop-nav">
+              <a href="#" class="aTag-img">
+                <img
+                  src="./assets/images/CB Logo Final 1.svg"
+                  alt="logo-image"
+                  class="logo-text"
+                />
+                <img
+                  src="./assets/images/logo-no-text.svg"
+                  alt="logo-no-text"
+                  class="logo-no-text"
+                />
+              </a>
+            </div>
+
+            <ul class="navbar-right desktop-nav">
+              <li><a href="#">Beauty Tips</a></li>
+              <li><a href="./About/index.html">About</a></li>
+              <li><a href="#task_5_home_form">Contact</a></li>
+              <li>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+              </li>
+            </ul>
+          </section>
+        </nav>
+
+        <!-- off screen menu for mobile -->
+        <div class="off-screen-menu">
+          <ul class="menu-list">
+            <li><a href="#">Home</a></li>
+            <li><a href="./Portfolio/index.html">My Work</a></li>
+            <li><a href="./service/index.html">Services</a></li>
+            <li><a href="#">Classes</a></li>
+            <li><a href="#">Beauty Tips</a></li>
+            <li><a href="./About/index.html">About</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+          <ul class="icons-list">
+            <li>
+              <a href="#"><i class="fa-solid fa-phone"></i></a>
+            </li>
+            <li>
+              <a href="#" class="fa-layers fa-fw">
+                <i class="fa-regular fa-comment"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            </li>
+          </ul>
+          <p>Expert Makeup and Hairstyle Studio</p>
+        </div>
+      </section>
+      <script src="./Common/Header/js/script.js"></script>
     </header>
-    <section id="home_top_page">
-      <!-- Put TopPage(task4) here -->
+    <section id="task_2_home_top_page">
+      <main class="top">
+        <section class="top-main">
+          <div class="top-main-box">
+            <h1><img src="assets/images/carla-signature.svg" alt="Bride" /></h1>
+            <p>
+              Vancouver's go-to makeup and hairstyle, with a Brazilian twist
+            </p>
+            <div class="btn"><a href="">Free consultation</a></div>
+          </div>
+        </section>
+        <section class="top-about">
+          <div class="top-about-presentation">
+            <div class="txt">
+              <h2 class="ttl">Professional Makeup & Hairstyle Artist</h2>
+              <p>
+                10+ years creating stunning looks for weddings and special
+                ocassions
+              </p>
+              <div class="signature">
+                <img
+                  src="./assets/images/about-name.svg"
+                  alt="Carla Beauty Signature"
+                />
+              </div>
+              <div class="btn"><a href="">About me</a></div>
+            </div>
+            <div class="img">
+              <img src="./assets/images/about-img.png" alt="Carla Beauty" />
+            </div>
+          </div>
+          <dl class="top-about-list">
+            <dt><span>Our Brands</span></dt>
+            <dd>
+              <ul>
+                <li><img src="./assets/images/logo-mac.png" alt="" /></li>
+                <li><img src="./assets/images/logo-lancome.png" alt="" /></li>
+                <li><img src="./assets/images/logo-inglot.png" alt="" /></li>
+                <li>
+                  <img src="./assets/images/logo-lauramercier.png" alt="" />
+                </li>
+                <li>
+                  <img src="./assets/images/logo-charlottetilbury.png" alt="" />
+                </li>
+                <li><img src="./assets/images/logo-tarte.png" alt="" /></li>
+                <li><img src="./assets/images/logo-anastasia.png" alt="" /></li>
+                <li><img src="./assets/images/logo-kryolan.png" alt="" /></li>
+              </ul>
+            </dd>
+          </dl>
+        </section>
+      </main>
     </section>
-    <section id="home_you_are_star">
-      <!-- Put YouAreStar(task5) here -->
+    <section id="task_3_home_you_are_star">
+      <section id="section-head">
+        <h1>YOU ARE A TAR</h1>
+        <p>
+          Shine effortlessly, embrace your unique features with absolute
+          confidence.
+        </p>
+      </section>
+
+      <div class="div-btn">
+        <button class="btn btn-myWork">My Work</button>
+      </div>
+
+      <!-- main area for My Work -->
+      <section id="section-myWorks">
+        <div class="myWork small-img">
+          <img src="./assets/images/my-work01.png" alt="my-worl01" />
+        </div>
+        <div class="myWork small-img">
+          <img src="./assets/images/my-work02.png" alt="my-worl02" />
+        </div>
+        <div class="myWork small-img">
+          <img src="./assets/images/my-work03.png" alt="my-worl03" />
+        </div>
+        <div class="myWork small-img">
+          <img src="./assets/images/my-work04.png" alt="my-worl04" />
+        </div>
+      </section>
+
+      <!-- bottm area -->
+      <section id="section-bottom">
+        <div class="text">
+          <img src="./assets/images/sixsix.png" alt="sixsix.png" />
+          <p>
+            Calra is the best! She made me the night's brightest star! She
+            stayed with me the whole wedding ensuring I always looked and felt
+            wonderful!!
+          </p>
+        </div>
+        <div class="signature">
+          <img
+            class="img-vector"
+            src="./assets/images/Vector.png"
+            alt="Vector"
+          />
+          <img
+            class="img-signature"
+            src="./assets/images/Janny.png"
+            alt="signature-janny"
+          />
+          <img
+            class="img-vector"
+            src="./assets/images/Vector-back.png"
+            alt="Vector-back"
+          />
+        </div>
+      </section>
     </section>
     <section id="home_make_up">
       <!-- Put MakeUp(task6) here -->
     </section>
-    <section id="home_form">
-      <!-- Put Form(task7) here -->
+    <section id="task_5_home_form">
+      <div class="canvas">
+        <div class="title">
+          <h2>LET'S TALK</h2>
+          <p>
+            Check availability, pricing, and schedule a meeting for your special
+            day or our academy services.
+          </p>
+        </div>
+        <form action="">
+          <h3>Services</h3>
+          <section class="form_list">
+            <fieldset class="event-type-field">
+              <legend>Event Type</legend>
+              <div class="radio-event-type">
+                <label for="wedding" class="radio-option radio-wedding"
+                  >Wedding
+                  <input
+                    type="radio"
+                    id="wedding"
+                    value="wedding"
+                    name="event-type"
+                    checked
+                  />
+                  <i
+                    class="fa-solid fa-circle-check checked"
+                    id="wedding-checked"
+                  ></i>
+                </label>
+
+                <label for="party" class="radio-option radio-party">
+                  Party
+                  <input
+                    type="radio"
+                    id="party"
+                    value="party"
+                    name="event-type"
+                  />
+                  <i class="fa-solid fa-circle-check" id="party-checked"></i>
+                </label>
+
+                <label for="photoshoot" class="radio-option radio-photoshoot">
+                  Photoshoot
+                  <input
+                    type="radio"
+                    id="photoshoot"
+                    value="photoshoot"
+                    name="event-type"
+                  />
+                  <i
+                    class="fa-solid fa-circle-check"
+                    id="photoshoot-checked"
+                  ></i>
+                </label>
+              </div>
+            </fieldset>
+
+            <div class="time-info">
+              <fieldset class="event-date">
+                <legend>Event Date</legend>
+                <input
+                  name="date"
+                  type="date"
+                  class="event-schedule"
+                  required="true"
+                />
+                <div class="not-decided">
+                  <input type="checkbox" id="date-not-decided" />
+                  <label for="date-not-decided">Not decided</label>
+                </div>
+              </fieldset>
+
+              <fieldset class="event-time">
+                <legend>Event Time</legend>
+                <select id="contact-method" name="contact-method">
+                  <option value="full-day">Full day</option>
+                  <option value="day-time">Day time</option>
+                  <option value="night-time">Night time</option>
+                </select>
+                <div class="not-decided">
+                  <input type="checkbox" id="time-not-decided" />
+                  <label for="time-not-decided">Not decided</label>
+                </div>
+              </fieldset>
+            </div>
+
+            <fieldset class="name-info">
+              <legend>Name</legend>
+              <input type="text" placeholder="Your name" required />
+            </fieldset>
+
+            <fieldset class="contact-method">
+              <legend>Contact</legend>
+
+              <div class="radio-options">
+                <div class="radio-option">
+                  <div class="radio">
+                    <input
+                      type="radio"
+                      id="call"
+                      name="method"
+                      value="call"
+                      checked
+                    />
+                    <label for="call detail-checked">Call</label>
+                  </div>
+                  <div class="call-info detail-checked">
+                    <i class="fa-solid fa-angle-down"></i>
+                    <select>
+                      <option>+1</option>
+                      <option>+63</option>
+                      <option>+52</option>
+                      <option>+55</option>
+                      <option>+81</option>
+                    </select>
+                    <input
+                      type="tel"
+                      class="detail detail-checked"
+                      id="call-detail"
+                      placeholder="Your call number"
+                      pattern="\d*"
+                      title="only number is accepted"
+                      required="true"
+                    />
+                  </div>
+                </div>
+
+                <div class="radio-option">
+                  <div class="radio">
+                    <input
+                      type="radio"
+                      id="whatsapp"
+                      name="method"
+                      value="whatsapp"
+                    />
+                    <label for="whatsapp">Whatsapp</label>
+                  </div>
+                  <div class="whatsapp-info">
+                    <i class="fa-solid fa-angle-down"></i>
+                    <select>
+                      <option>+1</option>
+                      <option>+63</option>
+                      <option>+52</option>
+                      <option>+55</option>
+                      <option>+81</option>
+                    </select>
+                    <input
+                      name="whatsapp"
+                      type="tel"
+                      class="detail detail-checked"
+                      id="whatsapp-detail"
+                      placeholder="Your whatsapp number"
+                      pattern="\d*"
+                      title="only number is accepted"
+                    />
+                  </div>
+                </div>
+
+                <div class="radio-option">
+                  <div class="radio">
+                    <input type="radio" id="sms" name="method" value="sms" />
+                    <label for="sms">SMS</label>
+                  </div>
+                  <div class="sms-info">
+                    <i class="fa-solid fa-angle-down"></i>
+                    <select>
+                      <option>+1</option>
+                      <option>+63</option>
+                      <option>+52</option>
+                      <option>+55</option>
+                      <option>+81</option>
+                    </select>
+                    <input
+                      type="tel"
+                      class="detail detail-checked"
+                      id="sms-detail"
+                      placeholder="Your SMS number"
+                      pattern="\d*"
+                      title="only number is accepted"
+                    />
+                  </div>
+                </div>
+                <div class="radio-option">
+                  <div class="radio">
+                    <input
+                      type="radio"
+                      id="email"
+                      name="method"
+                      value="email"
+                    />
+                    <label for="email">Email</label>
+                  </div>
+                  <input
+                    type="email"
+                    class="detail"
+                    id="email-detail"
+                    placeholder="Your email address"
+                    name="email"
+                    pattern=".*@.*\..*"
+                  />
+                </div>
+              </div>
+            </fieldset>
+          </section>
+          <button type="submit" class="submit-button">Submit</button>
+        </form>
+      </div>
+      <script src="./Home/Form/app.js"></script>
     </section>
     <footer>
       <!-- Put footer component here -->

@@ -7,8 +7,272 @@
 body {
   font-family: "Avenir";
   font-weight: 300;
-  background-color: #F8F6F4;
+  background-color: #f8f6f4;
   color: #191919;
+}
+
+body #header-section .navbar {
+  padding: 20px;
+  transition: padding 0.5s ease;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  background-color: #f8f6f4;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  width: 100%;
+  min-height: 68px;
+}
+body #header-section .navbar .ham-menu {
+  height: 40px;
+  width: 40px;
+  margin-right: auto;
+  position: relative;
+}
+body #header-section .navbar .ham-menu span {
+  display: block;
+  height: 2px;
+  width: 100%;
+  background-color: #725a58;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: 0.5s ease;
+}
+body #header-section .navbar .ham-menu span:nth-child(1) {
+  top: 25%;
+}
+body #header-section .navbar .ham-menu span:nth-child(3) {
+  top: 75%;
+}
+body #header-section .navbar .logo {
+  margin: 0 auto;
+}
+body #header-section .navbar .insta-icon {
+  height: 40px;
+  width: 40px;
+  margin-left: auto;
+  position: relative;
+}
+body #header-section .navbar .insta-icon a {
+  display: block;
+  text-decoration: none;
+  color: #725a58;
+}
+body #header-section .navbar .insta-icon a i {
+  font-size: 40px;
+}
+body #header-section .navbar .insta-icon:hover {
+  opacity: 0.4;
+  transition: 0.5s ease;
+}
+body #header-section .navbar .ham-menu.active span:nth-child(1) {
+  top: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+body #header-section .navbar .ham-menu.active span:nth-child(2) {
+  opacity: 0;
+}
+body #header-section .navbar .ham-menu.active span:nth-child(3) {
+  top: 50%;
+  transform: translate(-50%, 50%) rotate(-45deg);
+}
+body #header-section .navbar .insta-icon.active {
+  opacity: 0;
+  transition: 0.5s ease;
+}
+body #header-section .navbar .desktop-nav {
+  display: none;
+}
+body #header-section .navbar.on-scroll {
+  padding: 0px 20px;
+  transition: 0.5s ease;
+}
+body #header-section .off-screen-menu {
+  background-color: #f8f6f4;
+  width: 100%;
+  max-width: 360px;
+  position: fixed;
+  top: 144px;
+  left: -450px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  transition: 0.5s ease;
+  padding: 30px 0;
+}
+body #header-section .off-screen-menu .menu-list {
+  list-style: none;
+  font-size: 32px;
+}
+body #header-section .off-screen-menu .menu-list li {
+  font-family: "Baskervville", serif;
+  font-size: 32px;
+  font-weight: 400px;
+  font-style: normal;
+  margin: 20px auto;
+}
+body #header-section .off-screen-menu .menu-list li a {
+  text-decoration: none;
+  color: #725a58;
+}
+body #header-section .off-screen-menu .menu-list li:hover {
+  opacity: 0.4;
+  transition: 0.5s ease;
+}
+body #header-section .off-screen-menu .icons-list {
+  list-style: none;
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
+  margin: 20px auto;
+}
+body #header-section .off-screen-menu .icons-list li {
+  margin: 0 15px;
+}
+body #header-section .off-screen-menu .icons-list li a {
+  text-decoration: none;
+  color: #725a58;
+}
+body #header-section .off-screen-menu .icons-list li:hover {
+  opacity: 0.4;
+  transition: 0.5s ease;
+}
+body #header-section .off-screen-menu p {
+  font-size: 14px;
+}
+body #header-section .off-screen-menu.active {
+  left: 0;
+}
+body #header-section .off-screen-menu.on-scroll {
+  top: 104px;
+  transition: 0.5s ease;
+}
+@media screen and (min-width: 1024px) {
+  body #header-section .navbar {
+    display: block;
+    padding: 20px 40px;
+    width: 100%;
+  }
+  body #header-section .navbar .ham-menu,
+  body #header-section .navbar .logo-mobile,
+  body #header-section .navbar .insta-icon {
+    display: none;
+  }
+  body #header-section .navbar .desktop-screen-nav {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    max-width: 1440px;
+    margin: 0 auto;
+    text-align: center;
+    align-items: center;
+  }
+  body #header-section .navbar .desktop-screen-nav .desktop-nav {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+  }
+  body #header-section .navbar .desktop-screen-nav .desktop-nav li {
+    font-family: "Baskervville", serif;
+    font-size: 20px;
+    font-weight: 400px;
+    font-style: normal;
+    margin: 20px auto;
+    position: relative;
+  }
+  body #header-section .navbar .desktop-screen-nav .desktop-nav li a {
+    text-decoration: none;
+    color: #725a58;
+  }
+  body #header-section .navbar .desktop-screen-nav .desktop-nav li:hover {
+    opacity: 0.4;
+    transition: 0.5s ease;
+  }
+  body
+    #header-section
+    .navbar
+    .desktop-screen-nav
+    .desktop-nav
+    .aTag-img
+    .logo-no-text {
+    display: none;
+  }
+  body
+    #header-section
+    .navbar
+    .desktop-screen-nav
+    .desktop-nav
+    li:nth-child(1):after {
+    content: "";
+    position: absolute;
+    right: -20px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 1px;
+    height: 20px;
+    background-color: #e3b6b1;
+  }
+  body
+    #header-section
+    .navbar
+    .desktop-screen-nav
+    .desktop-nav
+    li:nth-child(2):after {
+    content: "";
+    position: absolute;
+    right: -20px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 1px;
+    height: 20px;
+    background-color: #e3b6b1;
+  }
+  body
+    #header-section
+    .navbar
+    .desktop-screen-nav
+    .desktop-nav
+    li:nth-child(3):after {
+    content: "";
+    position: absolute;
+    right: -20px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 1px;
+    height: 20px;
+    background-color: #e3b6b1;
+  }
+  body #header-section .navbar .desktop-screen-nav .logo {
+    margin: 0 20px;
+  }
+  body #header-section .navbar.on-scroll {
+    padding: 0px 40px;
+    transition: 0.5s ease;
+  }
+  body
+    #header-section
+    .navbar.on-scroll
+    .desktop-screen-nav
+    .logo
+    .aTag-img
+    .logo-text {
+    display: none;
+  }
+  body
+    #header-section
+    .navbar.on-scroll
+    .desktop-screen-nav
+    .logo
+    .aTag-img
+    .logo-no-text {
+    display: flex;
+  }
+  body #header-section .off-screen-menu {
+    display: none;
+  }
 }
 
 #section-head {
@@ -23,14 +287,14 @@ body {
   margin-bottom: 24px;
   letter-spacing: 13%;
   line-height: 130%;
-  color: #725A58;
+  color: #725a58;
 }
 #section-head h1::after {
   content: "";
   display: block;
   width: 200px;
   height: 2px;
-  background-color: #E3B6B1;
+  background-color: #e3b6b1;
   margin: 30px auto 0;
 }
 #section-head p {
@@ -54,7 +318,7 @@ body {
 }
 
 #section-main .items {
-  background-color: #FAE9E7;
+  background-color: #fae9e7;
   display: flex;
   flex-direction: column;
 }
@@ -72,16 +336,19 @@ body {
   font-style: normal;
   font-size: 36px;
   margin-bottom: 24px;
-  color: #725A58;
+  color: #725a58;
 }
-#section-main .items .item .service .price-and-hour .price, #section-main .items .item .service .price-and-hour .hour {
+#section-main .items .item .service .price-and-hour .price,
+#section-main .items .item .service .price-and-hour .hour {
   margin-bottom: 14px;
   font-size: 16px;
 }
-#section-main .items .item .service .price-and-hour .price i, #section-main .items .item .service .price-and-hour .hour i {
-  color: #B99692;
+#section-main .items .item .service .price-and-hour .price i,
+#section-main .items .item .service .price-and-hour .hour i {
+  color: #b99692;
 }
-#section-main .items .item .service .price-and-hour .price p, #section-main .items .item .service .price-and-hour .hour p {
+#section-main .items .item .service .price-and-hour .price p,
+#section-main .items .item .service .price-and-hour .hour p {
   display: inline;
 }
 #section-main .items .item .service .service-explanation {
@@ -102,16 +369,16 @@ body {
   margin: 0 auto;
   width: 100%;
   font-size: 20px;
-  color: #B99692;
-  background-color: #FAE9E7;
-  border: 1px solid #B99692;
+  color: #b99692;
+  background-color: #fae9e7;
+  border: 1px solid #b99692;
   border-radius: 1px;
   margin-bottom: 24px;
   padding: 15px 0;
 }
 #section-main .items .item .service .btn:hover {
-  background-color: #B99692;
-  color: #FAE9E7;
+  background-color: #b99692;
+  color: #fae9e7;
   transition: 0.25s;
 }
 @media screen and (min-width: 780px) {
@@ -160,7 +427,8 @@ body {
     flex-direction: row;
     margin-bottom: 15px;
   }
-  #section-main .items .item .service .price-and-hour .price i, #section-main .items .item .service .price-and-hour .hour i {
+  #section-main .items .item .service .price-and-hour .price i,
+  #section-main .items .item .service .price-and-hour .hour i {
     margin-left: 10px;
   }
   #section-main .items .item .service .service-explanation {
