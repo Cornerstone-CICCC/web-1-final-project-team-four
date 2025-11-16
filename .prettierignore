@@ -1,0 +1,15 @@
+# Dependencies and builds
+node_modules
+dist
+build
+coverage
+
+# OS/Editor files
+.DS_Store
+.vscode/*
+!.vscode/settings.json
+!.vscode/extensions.json
+
+# Source maps and generated artifacts
+*.map
+
