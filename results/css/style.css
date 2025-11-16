@@ -454,4 +454,147 @@
   max-width: 120px;
 }
 
+#task-3-home_you_are_star {
+  padding: 40px 0;
+  font-family: "Avenir";
+  font-weight: 300;
+  background-color: #fae9e7;
+  color: #191919;
+}
+#task-3-home_you_are_star #section-head {
+  text-align: center;
+  margin: 50px auto 20px;
+  height: auto;
+}
+#task-3-home_you_are_star #section-head h1 {
+  font-family: "Baskervville", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 40px;
+  margin-bottom: 24px;
+  letter-spacing: 13%;
+  line-height: 120%;
+  color: #725a58;
+}
+#task-3-home_you_are_star #section-head h1::after {
+  content: "";
+  display: block;
+  width: 200px;
+  height: 1px;
+  background-color: #e3b6b1;
+  margin: 15px auto 0;
+}
+#task-3-home_you_are_star #section-head p {
+  display: block;
+  margin: 0 auto;
+}
+#task-3-home_you_are_star .div-btn {
+  text-align: center;
+}
+#task-3-home_you_are_star .div-btn .btn-myWork {
+  font-family: "Baskervville", serif;
+  font-weight: 400;
+  font-style: normal;
+  display: block;
+  margin: 0 auto;
+  width: 160px;
+  height: 53px;
+  font-size: 20px;
+  color: #5e4a49;
+  background-color: #fae9e7;
+  border: 1px solid #5e4a49;
+  border-radius: 1px;
+  padding: 15px 0;
+}
+#task-3-home_you_are_star .div-btn .btn-myWork:hover {
+  background-color: #b99692;
+  color: #fae9e7;
+  border-color: #b99692;
+  transition: 0.25s;
+}
+#task-3-home_you_are_star #section-myWorks {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12.25px;
+  margin: 30px auto;
+  align-items: center;
+}
+#task-3-home_you_are_star #section-myWorks .myWork img {
+  width: 100%;
+  height: auto;
+}
+#task-3-home_you_are_star #section-bottom {
+  margin: 0 auto;
+  margin-bottom: 50px;
+  text-align: center;
+  font-size: 20px;
+}
+#task-3-home_you_are_star #section-bottom .text img {
+  width: 32px;
+  height: 23.73px;
+}
+#task-3-home_you_are_star #section-bottom .text p {
+  display: block;
+  margin: 24px 0;
+  font-family: "Baskervville", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+  line-height: 150%;
+  letter-spacing: 0%;
+}
+#task-3-home_you_are_star #section-bottom .signature {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+  width: 189px;
+  margin: 0 auto;
+  align-items: center;
+}
+@media screen and (min-width: 768px) {
+  #task-3-home_you_are_star #section-head {
+    height: auto;
+  }
+  #task-3-home_you_are_star #section-head h1 {
+    font-size: 80px;
+    margin-bottom: 40px;
+    letter-spacing: 13%;
+    line-height: 130%;
+  }
+  #task-3-home_you_are_star #section-head h1::after {
+    content: "";
+    display: block;
+    width: 200px;
+    height: 1px;
+    background-color: #e3b6b1;
+    margin: 15px auto 0;
+  }
+  #task-3-home_you_are_star #section-head p {
+    display: block;
+    margin: 0 auto;
+    max-width: 437px;
+    height: 54px;
+  }
+  #task-3-home_you_are_star .div-btn .btn-myWork {
+    min-width: 160px;
+    height: 62px;
+  }
+  #task-3-home_you_are_star #section-myWorks {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 22.15px;
+    margin: 50px auto;
+    max-width: 1440px;
+    height: auto;
+  }
+  #task-3-home_you_are_star #section-myWorks .myWork img {
+    width: 100%;
+    height: auto;
+  }
+  #task-3-home_you_are_star #section-bottom {
+    max-width: 778px;
+    font-size: 32px;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */
