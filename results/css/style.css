@@ -627,7 +627,8 @@
 #task_5_home_form .canvas form {
   max-width: 768px;
   background-color: #fae9e7;
-  margin: 48px auto;
+  margin: 0px auto;
+  margin-top: 40px;
   padding: 80px 0;
 }
 #task_5_home_form .canvas form h3 {
@@ -1056,6 +1057,114 @@
     width: 100%;
     height: 60px;
   }
+}
+
+.footer-main {
+  padding: 60px 40px 30px;
+  background-color: #f8f6f4;
+  font-family: "Baskerville", serif;
+  font-size: 1.25rem;
+  color: #725a58;
+  text-align: center;
+  margin: 0;
+}
+@media screen and (max-width: 769px) {
+  .footer-main {
+    padding: 40px 20px 20px;
+    font-size: 18px;
+  }
+}
+.footer-top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 0;
+}
+@media screen and (max-width: 768px) {
+  .footer-top {
+    flex-direction: column;
+    text-align: center;
+    gap: 24px;
+  }
+}
+.footer-brand h2 {
+  font-size: 1.8rem;
+  margin: 0;
+}
+.footer-brand p {
+  font-size: 1rem;
+  margin: 0;
+}
+.footer-icons {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin: 20px 0;
+}
+@media screen and (max-width: 768px) {
+  .footer-icons {
+    gap: 16px;
+  }
+}
+.footer-icons img {
+  width: 24px;
+  height: 24px;
+  transition: transform 0.3s ease;
+}
+.footer-nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  border-top: 1px solid #7d6b6b;
+  border-bottom: 1px solid #7d6b6b;
+}
+@media screen and (max-width: 1049px) {
+  .footer-nav {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(120px, 1fr));
+    justify-content: center;
+    align-items: center;
+    padding: 10px 80px;
+  }
+}
+.footer-nav a {
+  position: relative;
+  text-decoration: none;
+  color: #7d6b6b;
+  font-weight: 500;
+  font-size: 1rem;
+  transition: color 0.3 ease;
+}
+@media screen and (max-width: 1049px) {
+  .footer-nav a {
+    justify-content: center;
+  }
+}
+.footer-nav a:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #7d6b6b;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3 ease;
+}
+.footer-nav a:hover {
+  color: #462c2c;
+}
+.footer-nav a:hover::after {
+  transform: scaleX(1);
+}
+.footer-copyright {
+  font-size: 0.8rem;
+  color: #a18f8f;
+  margin: 0;
 }
 
 /*# sourceMappingURL=style.css.map */
