@@ -1,99 +1,199 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Services</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Services</title>
 
-        <link rel="stylesheet" href="./css/style.css">
-        <script src="https://kit.fontawesome.com/1cca408388.js" crossorigin="anonymous"></script>
-</head>
-<body>
-        <!-- SERVICES title (h1) -->
-        <section id="section-head">
-                <h1>SERVICES</h1>
-                <p>We offer fully customizable plan to meet your unique requirements.</p>
+    <link rel="stylesheet" href="./css/style.css" />
+    <script
+      src="https://kit.fontawesome.com/1cca408388.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <section id="header-section">
+      <nav class="navbar">
+        <!-- navbar for mobile. This is the default -->
+        <div class="ham-menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="logo logo-mobile">
+          <a href="#" class="aTag-img">
+            <img src="../assets/images/CB Logo Final 1.svg" alt="logo-image" />
+          </a>
+        </div>
+        <div class="insta-icon">
+          <a href="#" class="aTag-instagram"
+            ><i class="fa-brands fa-instagram"></i
+          ></a>
+        </div>
+
+        <!-- navbar for desktop, display: none; hide them on mobile screen -->
+        <section class="desktop-screen-nav">
+          <ul class="navbar-left desktop-nav">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../../Portfolio/index.html">My Work</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Classes</a></li>
+          </ul>
+
+          <div class="logo desktop-nav">
+            <a href="#" class="aTag-img">
+              <img
+                src="../assets/images/CB Logo Final 1.svg"
+                alt="logo-image"
+                class="logo-text"
+              />
+              <img
+                src="./assets/images/logo-no-text.svg"
+                alt="logo-no-text"
+                class="logo-no-text"
+              />
+            </a>
+          </div>
+
+          <ul class="navbar-right desktop-nav">
+            <li><a href="#">Beauty Tips</a></li>
+            <li><a href="../About/index.html">About</a></li>
+            <li><a href="../index.html#task_5_home_form">Contact</a></li>
+            <li>
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            </li>
+          </ul>
         </section>
+      </nav>
 
-        <!-- Service sections (main area) -->
-        <section id="section-main">
-                <main class="items">
-                        
-                        <!-- item1 - wedding day -->
-                        <div class="item item-wedding">
-                                <div class="image">
-                                        <img src="./assets/images/wedding-day.png" alt="wedding-day">
-                                </div>
-                                <div class="service">
-                                        <h2>Wedding Day</h2>
-                                        <div class="price-and-hour">
-                                                <div class="price">
-                                                        <i class="fa-solid fa-dollar-sign"></i>
-                                                        <p>Starting from CAD 1,000</p>
-                                                </div>
-                                                <div class="hour">
-                                                        <i class="fa-regular fa-clock"></i>
-                                                        <p>On-demand</p>
-                                                </div>
-                                        </div>
-                                        <div class="service-explanation">
-                                                <h3>Welcome to our spoiled bride service!</h3>
-                                                <p>Elevate your special day with our expect hairstyling, makeup, and beauty treatments. Enjoy exclusive access to outluxurious lounge while indulging in complimentary coffee or tea with sweet treats. Relax with a soothing bath and receive assistance with dressing. Pamper yourself and feel radiant on your big day!</p>
-                                        </div>
-                                        <button class="btn">Get a Quote</button>
-                                </div>
-                        </div>
+      <!-- off screen menu for mobile -->
+      <div class="off-screen-menu">
+        <ul class="menu-list">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../Portfolio/index.html">My Work</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Classes</a></li>
+          <li><a href="#">Beauty Tips</a></li>
+          <li><a href="../About/index.html">About</a></li>
+          <li><a href="../index.html#task_5_home_form">Contact</a></li>
+        </ul>
+        <ul class="icons-list">
+          <li>
+            <a href="#"><i class="fa-solid fa-phone"></i></a>
+          </li>
+          <li>
+            <a href="#" class="fa-layers fa-fw">
+              <i class="fa-regular fa-comment"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          </li>
+        </ul>
+        <p>Expert Makeup and Hairstyle Studio</p>
+      </div>
+    </section>
+    <!-- SERVICES title (h1) -->
+    <section id="section-head">
+      <h1>SERVICES</h1>
+      <p>We offer fully customizable plan to meet your unique requirements.</p>
+    </section>
 
-                        <!-- item2 - party time! -->
-                        <div class="item item-party">
-                                <div class="image">
-                                        <img src="./assets/images/party-time.png" alt="party-time">
-                                </div>
-                                <div class="service">
-                                        <h2>Party Time!</h2>
-                                        <div class="price-and-hour">
-                                                <div class="price">
-                                                        <i class="fa-solid fa-dollar-sign"></i>
-                                                        <p>Starting from CAD 200</p>
-                                                </div>
-                                                <div class="hour">
-                                                        <i class="fa-regular fa-clock"></i>
-                                                        <p>1 - 2 hours</p>
-                                                </div>
-                                        </div>
-                                        <div class="service-explanation">
-                                                <h3>Your go-to everyday social make up</h3>
-                                                <p>Discover our additional services! Elevate your look for any occasion with our expert makeup and hairstyle services. From birthdays to corporate events, our team creates stunning looks to suit your style. Book now and get ready to dazzle!</p>
-                                        </div>
-                                        <button class="btn">Get a Quote</button>
-                                </div>
-                        </div>
+    <!-- Service sections (main area) -->
+    <section id="section-main">
+      <main class="items">
+        <!-- item1 - wedding day -->
+        <div class="item item-wedding">
+          <div class="image">
+            <img src="./assets/images/wedding-day.png" alt="wedding-day" />
+          </div>
+          <div class="service">
+            <h2>Wedding Day</h2>
+            <div class="price-and-hour">
+              <div class="price">
+                <i class="fa-solid fa-dollar-sign"></i>
+                <p>Starting from CAD 1,000</p>
+              </div>
+              <div class="hour">
+                <i class="fa-regular fa-clock"></i>
+                <p>On-demand</p>
+              </div>
+            </div>
+            <div class="service-explanation">
+              <h3>Welcome to our spoiled bride service!</h3>
+              <p>
+                Elevate your special day with our expect hairstyling, makeup,
+                and beauty treatments. Enjoy exclusive access to outluxurious
+                lounge while indulging in complimentary coffee or tea with sweet
+                treats. Relax with a soothing bath and receive assistance with
+                dressing. Pamper yourself and feel radiant on your big day!
+              </p>
+            </div>
+            <button class="btn">Get a Quote</button>
+          </div>
+        </div>
 
-                        <!-- item3 - photoshoot -->
-                        <div class="item item-photoshoot">
-                                <div class="image">
-                                        <img src="./assets/images/photoshoot.png" alt="photoshoot">
-                                </div>
-                                <div class="service">
-                                        <h2>Photoshoot</h2>
-                                        <div class="price-and-hour">
-                                                <div class="price">
-                                                        <i class="fa-solid fa-dollar-sign"></i>
-                                                        <p>Starting from CAD 800</p>
-                                                </div>
-                                                <div class="hour">
-                                                        <i class="fa-regular fa-clock"></i>
-                                                        <p>2 - 3 hours</p>
-                                                </div>
-                                        </div>
-                                        <div class="service-explanation">
-                                                <h3>Be ready to create glamorous memories</h3>
-                                                <p>Our Photoshoot and Editorial Makeup Service will help you shine in the spotlight. We provide tailored looks to captivate the cameta. Whether you're a model or an influencer, we'll highlight your natural beauty with precision and style.</p>
-                                        </div>
-                                        <button class="btn">Get a Quote</button>
-                                </div>
-                        </div>
-                </main>
-        </section>
-</body>
+        <!-- item2 - party time! -->
+        <div class="item item-party">
+          <div class="image">
+            <img src="./assets/images/party-time.png" alt="party-time" />
+          </div>
+          <div class="service">
+            <h2>Party Time!</h2>
+            <div class="price-and-hour">
+              <div class="price">
+                <i class="fa-solid fa-dollar-sign"></i>
+                <p>Starting from CAD 200</p>
+              </div>
+              <div class="hour">
+                <i class="fa-regular fa-clock"></i>
+                <p>1 - 2 hours</p>
+              </div>
+            </div>
+            <div class="service-explanation">
+              <h3>Your go-to everyday social make up</h3>
+              <p>
+                Discover our additional services! Elevate your look for any
+                occasion with our expert makeup and hairstyle services. From
+                birthdays to corporate events, our team creates stunning looks
+                to suit your style. Book now and get ready to dazzle!
+              </p>
+            </div>
+            <button class="btn">Get a Quote</button>
+          </div>
+        </div>
+
+        <!-- item3 - photoshoot -->
+        <div class="item item-photoshoot">
+          <div class="image">
+            <img src="./assets/images/photoshoot.png" alt="photoshoot" />
+          </div>
+          <div class="service">
+            <h2>Photoshoot</h2>
+            <div class="price-and-hour">
+              <div class="price">
+                <i class="fa-solid fa-dollar-sign"></i>
+                <p>Starting from CAD 800</p>
+              </div>
+              <div class="hour">
+                <i class="fa-regular fa-clock"></i>
+                <p>2 - 3 hours</p>
+              </div>
+            </div>
+            <div class="service-explanation">
+              <h3>Be ready to create glamorous memories</h3>
+              <p>
+                Our Photoshoot and Editorial Makeup Service will help you shine
+                in the spotlight. We provide tailored looks to captivate the
+                cameta. Whether you're a model or an influencer, we'll highlight
+                your natural beauty with precision and style.
+              </p>
+            </div>
+            <button class="btn">Get a Quote</button>
+          </div>
+        </div>
+      </main>
+    </section>
+    <script src="../Common/Header/js/script.js"></script>
+  </body>
 </html>
