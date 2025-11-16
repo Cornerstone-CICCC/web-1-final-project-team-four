@@ -546,4 +546,78 @@ body #header-section .off-screen-menu.on-scroll {
   margin: 0;
 }
 
+body #message-icon-section .off-screen-message-icon {
+  display: none;
+  transition: 0.5s ease;
+}
+body #message-icon-section .off-screen-message-icon ul {
+  list-style: none;
+}
+body #message-icon-section .off-screen-message-icon ul li {
+  width: 30px;
+  height: 30px;
+  margin: 0;
+  opacity: 0.6;
+}
+body #message-icon-section .off-screen-message-icon ul li a {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+body #message-icon-section .off-screen-message-icon ul li a img {
+  width: 100%;
+  height: auto;
+}
+body #message-icon-section .off-screen-message-icon.active {
+  display: block;
+  position: fixed;
+  right: 0;
+  bottom: 130px;
+}
+body #message-icon-section .off-screen-message-icon.active ul li:hover {
+  opacity: 1;
+  transition: 0.7s ease;
+}
+body #message-icon-section .message-icon {
+  position: fixed;
+  right: 0;
+  bottom: 100px;
+  width: 30px;
+  height: 30px;
+  background-color: #191919;
+  opacity: 0.6;
+}
+body #message-icon-section .message-icon a {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+body #message-icon-section .message-icon a img {
+  width: 100%;
+  height: auto;
+}
+body #message-icon-section .message-icon:hover {
+  opacity: 1;
+  transition: 0.7s ease;
+}
+body #message-icon-section .message-icon.on-scroll {
+  background-color: #b99692;
+  transition: 0.5s ease;
+}
+@media screen and (min-width: 1024px) {
+  body #message-icon-section .off-screen-message-icon ul li {
+    width: 50px;
+    height: 50px;
+  }
+  body #message-icon-section .off-screen-message-icon.active {
+    right: 0;
+    bottom: 150px;
+  }
+  body #message-icon-section .message-icon {
+    width: 50px;
+    height: 50px;
+    transition: 0.5s ease;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */
