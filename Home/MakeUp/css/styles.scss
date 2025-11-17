@@ -57,93 +57,92 @@ body {
     background-color: #F8F6F4;
 }
 
-
-/* IMAGES */
-
 .home-makeup-images {
-    display: flex;
-    justify-content: center;
-    gap: 60px;
-    flex-wrap: wrap;
-    padding: 2cm 0;
-}
-
-.image-box {
-    position: relative;
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  flex-wrap: wrap;
+  padding: 2cm 0;
 }
 
 
-.image-box img {
-    position: relative;
-    width: 400px;
-    height: 500px;
-    object-fit: cover;
-    border-radius: 3px;
-    justify-content: center;
-    gap: 1px;
-    
+.image-box-party,
+.image-box-photoshoot,
+.image-box-wedding {
+  position: relative;
+  width: 400px;
+  height: 500px;
 }
- 
 
 
+.image-box-party img,
+.image-box-photoshoot img,
 .image-box-wedding img {
-    width: 400px;
-    height: 500px;
-    object-fit: cover;
-    border-radius: 3px;
-position: relative;
-    transform: translateY(-20%);
-   margin-top: 1cm;
-  
-
-   }
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 3px;
+}
 
 
+.image-box-party span,
+.image-box-photoshoot span,
+.image-box-wedding span {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 80px;
+  font-weight: 600;
+  color: #725A58; 
+  pointer-events: none;
+  white-space: nowrap;
+  text-align: center;
+}
 
-/* TEXT(party, wedding, photoshoot) */
-.image-box span {
-    position: absolute;
-    bottom: 20px;
-    left: 50%;
-    transform: translateX(-50%);
-    font-family: "Baskervville";
-    font-size: 70px;
-    color: #FAE9E7;
-    font-weight: 600;
-    display: flex;
+.image-box-party span {
+  top: 20%;
+}
+
+
+.image-box-photoshoot span {
+  top: 20%;
+}
+
+.image-box-wedding span {
+  top: 40%;
+}
+
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .home-makeup-images {
+    flex-direction: column;
+    gap: 30px;
+    padding: 1cm 0;
     align-items: center;
-    gap: 10px;
+  }
+
+  .image-box {
+    width: 300px;
+    height: 400px;
+  }
+
+  .image-box span.text-overlay {
+    font-size: 60px;
+  }
 }
 
+@media (max-width: 480px) {
+  .image-box {
+    width: 100%;
+    height: auto;
+  }
 
-
-/*  P / W / P */
-span .letter-p {
-    font-size: 90px;
-    color: #d3b7b4;
-    font-weight: 600;
-    line-height: 1.6cm;
-    margin-left: -2.2cm;
-   
+  .image-box span.text-overlay {
+    font-size: 40px;
+  }
 }
 
-span .letter-w {
-    font-size: 90px;
-    color: #FAE9E7;
-    font-weight: 600;
-    line-height: 1px;
-    margin-left: -10cm;
-    margin-top: 8.5cm;
-    position: absolute;
-}
-
-span .letter-p2 {
-    font-size: 90px;
-    color: #d3b7b4;
-    line-height: 0.7;
-    margin-left: -4.4cm;
-    margin-bottom: -1px;
-}
 
 /*makeup101section*/
 .makeup101-section {
@@ -161,6 +160,7 @@ span .letter-p2 {
 }
 
 .class-item span {
+    text-align: center;
     padding-top: .5cm;
 }
 
@@ -206,7 +206,7 @@ span .letter-p2 {
 
 .vector-icon1 {
     text-align: center;
-    margin-left: 9.5cm;
+    margin-left: 7cm;
     width: 2.5%;
 
 }
@@ -219,7 +219,7 @@ span .letter-p2 {
 
 .vector-icon3 {
     text-align: center;
-    margin-left: 7.3cm;
+    margin-left: 7cm;
     width: 2.5%;
 }
 
