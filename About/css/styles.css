@@ -646,3 +646,9 @@ body #message-icon-section .message-icon.on-scroll {
 }
 
 /*# sourceMappingURL=style.css.map */
+
+@media screen and (max-width: 768px) {
+  body #message-icon-section {
+    display: none;
+  }
+}

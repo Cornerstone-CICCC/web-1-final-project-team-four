@@ -4,12 +4,13 @@
   padding: 0;
 }
 
-.box {
-  // max-width: 2400px;
-  // display: flex;
-  // flex-direction: column;
-  // align-items: center;
-  // justify-items: center;
+html,
+body {
+  overflow-x: hidden;
+}
+
+html {
+  scrollbar-gutter: stable both-edges;
 }
 
 #task_1_header {
@@ -697,7 +698,330 @@
   }
 }
 
-// ==================
+#task_4_home_make_up {
+  /* HEADER */
+  .home-makeup-header {
+    background-color: #f8f6f4;
+    text-align: center;
+    padding: 2cm 1cm;
+  }
+
+  .home-makeup-header h1 {
+    font-family: "Baskervville";
+    font-size: 40px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #725a58;
+    margin-bottom: 10px;
+  }
+
+  .home-makeup-header p {
+    font-family: "Avenir";
+    font-size: 22px;
+    font-weight: 300;
+    color: #191919;
+    padding-top: 1cm;
+  }
+
+  .pink-line {
+    width: 200px;
+    height: 4px;
+    background-color: #e3b6b1;
+    margin: 10px auto;
+    border-radius: 2px;
+  }
+
+  .quote {
+    font-family: "Baskervville";
+    font-weight: 400;
+    font-size: 20px;
+    color: #5e4a49;
+    letter-spacing: 0%;
+    padding: 0.6cm 1.2cm;
+    margin: #5e4a49;
+    align-items: center;
+    border-radius: 0%;
+    margin-top: 1cm;
+    margin-bottom: 1cm;
+    background-color: #f8f6f4;
+  }
+
+  .home-makeup-images {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+    padding: 2cm 0;
+  }
+
+  .image-box-party,
+  .image-box-photoshoot,
+  .image-box-wedding {
+    position: relative;
+    width: 400px;
+    height: 500px;
+  }
+
+  .image-box-party img,
+  .image-box-photoshoot img,
+  .image-box-wedding img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 3px;
+  }
+
+  .image-box-party span,
+  .image-box-photoshoot span,
+  .image-box-wedding span {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 80px;
+    font-weight: 600;
+    color: #725a58;
+    pointer-events: none;
+    white-space: nowrap;
+    text-align: center;
+  }
+
+  .image-box-party span {
+    top: 20%;
+  }
+
+  .image-box-photoshoot span {
+    top: 20%;
+  }
+
+  .image-box-wedding span {
+    top: 40%;
+  }
+
+  /* RESPONSIVE */
+  @media (max-width: 768px) {
+    .home-makeup-images {
+      flex-direction: column;
+      gap: 30px;
+      padding: 1cm 0;
+      align-items: center;
+    }
+
+    .image-box {
+      width: 300px;
+      height: 400px;
+    }
+
+    .image-box span.text-overlay {
+      font-size: 60px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .image-box {
+      width: 100%;
+      height: auto;
+    }
+
+    .image-box span.text-overlay {
+      font-size: 40px;
+    }
+  }
+
+  /*makeup101section*/
+  .makeup101-section {
+    background-color: #f8e8e5;
+    padding: 50px 0;
+
+    h2 {
+      padding-bottom: 2cm;
+      text-align: center;
+      margin-bottom: 40px;
+      font-size: 32px;
+      letter-spacing: 2px;
+      color: #5e4a49;
+    }
+  }
+
+  .class-item span {
+    text-align: center;
+    padding-top: 0.5cm;
+  }
+
+  .class-item p {
+    padding: 20px;
+    text-align: left;
+  }
+
+  .imagemakeup101 {
+    position: relative;
+    display: inline-block;
+  }
+
+  .imagemakeup101 img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+  .imagemakeup101 .frame {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 0.5cm;
+  }
+
+  .makeup101-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 50px;
+    max-width: 1200px;
+    margin: 0 auto;
+    color: #5e4a49;
+    text-align: left;
+    font-size: 22px;
+  }
+
+  .vector-icon1 {
+    text-align: center;
+    margin-left: 7cm;
+    width: 2.5%;
+  }
+
+  .vector-icon2 {
+    text-align: center;
+    margin-left: 7cm;
+    width: 2.5%;
+  }
+
+  .vector-icon3 {
+    text-align: center;
+    margin-left: 7cm;
+    width: 2.5%;
+  }
+
+  .makeup101-left {
+    width: 55%;
+  }
+
+  .all-classes {
+    font-family: "Baskervville";
+    font-size: 20px;
+    color: #5e4a49;
+    padding: 12px 40px;
+    background-color: transparent;
+    border: 1px solid #5e4a49;
+    cursor: pointer;
+    transition: 0.3s ease;
+    margin-top: 2cm;
+    margin-right: 12cm;
+  }
+
+  .all-classes:hover {
+    opacity: 0.7;
+  }
+
+  @media (max-width: 600px) {
+    .makeup101-container {
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+    }
+  }
+
+  .diy-corner {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #fff;
+
+    h4 {
+      font-family: "Baskervville";
+      font-size: 48px;
+      color: #725a58;
+      margin-bottom: 40px;
+      letter-spacing: 2px;
+      font-weight: 300;
+    }
+
+    .pink-line2 {
+      width: 200px;
+      height: 4px;
+      background-color: #e3b6b1;
+      opacity: 1;
+      margin: 10px auto;
+      border: none;
+      border-radius: 2px;
+    }
+
+    .videos-container {
+      padding-top: 2%;
+      display: flex;
+      justify-content: center;
+      align-items: stretch;
+      gap: 30px;
+      flex-wrap: wrap;
+      width: 100%;
+      max-width: 1200px;
+      margin: 0 auto;
+
+      iframe {
+        width: 350px;
+        height: 450px;
+        border: none;
+        border-radius: 6px;
+        object-fit: cover;
+      }
+    }
+
+    .more-btn {
+      margin-top: 40px;
+      padding: 0.5cm 1cm;
+      background-color: #f4e0de;
+      border: 1px #725a58 solid;
+      font-family: "Baskervville";
+      font-size: 24px;
+      color: #725a58;
+      background-color: transparent;
+      cursor: pointer;
+      transition: 0.3s ease;
+      margin: 1px #725a58 solid;
+
+      &:hover {
+        opacity: 0.8;
+      }
+    }
+  }
+
+  /* RESPONSIVE */
+  @media (max-width: 768px) {
+    .diy-corner {
+      padding: 40px 10px;
+
+      h4 {
+        font-size: 32px;
+        margin-bottom: 30px;
+      }
+
+      .videos-container {
+        flex-wrap: nowrap;
+        gap: 20px;
+        overflow-x: auto;
+        padding-bottom: 10px;
+        iframe {
+          width: 100%;
+          height: 250px;
+        }
+      }
+
+      .more-btn {
+        font-size: 18px;
+        padding: 10px 30px;
+      }
+    }
+  }
+}
 
 #task_5_home_form {
   .canvas {
