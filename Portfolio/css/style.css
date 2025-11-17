@@ -345,7 +345,7 @@ main {
   border-color: #191919;
 }
 .display .boxes-makeup {
-  max-width: 1022px;
+  max-width: 960px;
   height: auto;
   margin: 16px auto;
   padding: 16px;
@@ -362,7 +362,7 @@ main {
   height: 100%;
 }
 .display .boxes-hair-style {
-  max-width: 1022px;
+  max-width: 960px;
   height: auto;
   margin: 16px auto;
   padding: 16px;
@@ -652,3 +652,9 @@ body #message-icon-section .message-icon.on-scroll {
 }
 
 /*# sourceMappingURL=style.css.map */
+
+@media screen and (max-width: 768px) {
+  body #message-icon-section {
+    display: none;
+  }
+}
