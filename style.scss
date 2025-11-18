@@ -698,15 +698,14 @@ html {
   }
 }
 
-#task_4_home_make_up {
-  /* HEADER */
-  .home-makeup-header {
-    background-color: #f8f6f4;
-    text-align: center;
-    padding: 2cm 1cm;
-  }
 
-  .home-makeup-header h1 {
+  /* ================== HEADER #task_4_home_make_up ================== */
+.home-makeup-header {
+  background-color: #f8f6f4;
+  text-align: center;
+  padding: 2cm 1cm;
+
+  h1 {
     font-family: "Baskervville";
     font-size: 40px;
     font-weight: 400;
@@ -715,7 +714,7 @@ html {
     margin-bottom: 10px;
   }
 
-  .home-makeup-header p {
+  p {
     font-family: "Avenir";
     font-size: 22px;
     font-weight: 300;
@@ -736,23 +735,22 @@ html {
     font-weight: 400;
     font-size: 20px;
     color: #5e4a49;
-    letter-spacing: 0%;
     padding: 0.6cm 1.2cm;
-    margin: #5e4a49;
-    align-items: center;
-    border-radius: 0%;
     margin-top: 1cm;
     margin-bottom: 1cm;
     background-color: #f8f6f4;
+    border-radius: 0;
+    text-align: center;
   }
+}
 
-  .home-makeup-images {
-    display: flex;
-    justify-content: center;
-    gap: 50px;
-    flex-wrap: wrap;
-    padding: 2cm 0;
-  }
+/* ================== MAKEUP IMAGES ================== */
+.home-makeup-images {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  flex-wrap: wrap;
+  padding: 2cm 0;
 
   .image-box-party,
   .image-box-photoshoot,
@@ -760,116 +758,42 @@ html {
     position: relative;
     width: 400px;
     height: 500px;
-  }
-
-  .image-box-party img,
-  .image-box-photoshoot img,
-  .image-box-wedding img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
     border-radius: 3px;
-  }
+    overflow: hidden;
 
-  .image-box-party span,
-  .image-box-photoshoot span,
-  .image-box-wedding span {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    font-size: 80px;
-    font-weight: 600;
-    color: #725a58;
-    pointer-events: none;
-    white-space: nowrap;
-    text-align: center;
-  }
-
-  .image-box-party span {
-    top: 20%;
-  }
-
-  .image-box-photoshoot span {
-    top: 20%;
-  }
-
-  .image-box-wedding span {
-    top: 40%;
-  }
-
-  /* RESPONSIVE */
-  @media (max-width: 768px) {
-    .home-makeup-images {
-      flex-direction: column;
-      gap: 30px;
-      padding: 1cm 0;
-      align-items: center;
-    }
-
-    .image-box {
-      width: 300px;
-      height: 400px;
-    }
-
-    .image-box span.text-overlay {
-      font-size: 60px;
-    }
-  }
-
-  @media (max-width: 480px) {
-    .image-box {
+    img {
       width: 100%;
-      height: auto;
+      height: 100%;
+      object-fit: cover;
+      display: block;
     }
 
-    .image-box span.text-overlay {
-      font-size: 40px;
-    }
-  }
-
-  /*makeup101section*/
-  .makeup101-section {
-    background-color: #f8e8e5;
-    padding: 50px 0;
-
-    h2 {
-      padding-bottom: 2cm;
+    span {
+      position: absolute;
+      bottom: 10px;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 80px;
+      font-weight: 600;
+      color: #F8F6F4;
+      pointer-events: none;
       text-align: center;
-      margin-bottom: 40px;
-      font-size: 32px;
-      letter-spacing: 2px;
-      color: #5e4a49;
+      white-space: nowrap;
     }
   }
+}
 
-  .class-item span {
+/* ================== MAKEUP 101 ================== */
+.makeup101-section {
+  background-color: #f8e8e5;
+  padding: 50px 0;
+
+  h2 {
     text-align: center;
-    padding-top: 0.5cm;
-  }
-
-  .class-item p {
-    padding: 20px;
-    text-align: left;
-  }
-
-  .imagemakeup101 {
-    position: relative;
-    display: inline-block;
-  }
-
-  .imagemakeup101 img {
-    display: block;
-    width: 100%;
-    height: auto;
-  }
-
-  .imagemakeup101 .frame {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    padding: 0.5cm;
+    margin-bottom: 40px;
+    font-size: 32px;
+    letter-spacing: 2px;
+    color: #5e4a49;
   }
 
   .makeup101-container {
@@ -879,149 +803,203 @@ html {
     gap: 50px;
     max-width: 1200px;
     margin: 0 auto;
-    color: #5e4a49;
-    text-align: left;
     font-size: 22px;
-  }
-
-  .vector-icon1 {
-    text-align: center;
-    margin-left: 7cm;
-    width: 2.5%;
-  }
-
-  .vector-icon2 {
-    text-align: center;
-    margin-left: 7cm;
-    width: 2.5%;
-  }
-
-  .vector-icon3 {
-    text-align: center;
-    margin-left: 7cm;
-    width: 2.5%;
-  }
-
-  .makeup101-left {
-    width: 55%;
-  }
-
-  .all-classes {
-    font-family: "Baskervville";
-    font-size: 20px;
     color: #5e4a49;
-    padding: 12px 40px;
-    background-color: transparent;
-    border: 1px solid #5e4a49;
-    cursor: pointer;
-    transition: 0.3s ease;
-    margin-top: 2cm;
-    margin-right: 12cm;
-  }
+    flex-wrap: wrap;
 
-  .all-classes:hover {
-    opacity: 0.7;
-  }
-
-  @media (max-width: 600px) {
-    .makeup101-container {
-      flex-direction: column;
-      align-items: center;
-      gap: 20px;
-    }
-  }
-
-  .diy-corner {
-    padding: 60px 20px;
-    text-align: center;
-    background-color: #fff;
-
-    h4 {
-      font-family: "Baskervville";
-      font-size: 48px;
-      color: #725a58;
-      margin-bottom: 40px;
-      letter-spacing: 2px;
-      font-weight: 300;
+    .makeup101-left {
+      width: 55%;
     }
 
-    .pink-line2 {
-      width: 200px;
-      height: 4px;
-      background-color: #e3b6b1;
-      opacity: 1;
-      margin: 10px auto;
-      border: none;
-      border-radius: 2px;
-    }
-
-    .videos-container {
-      padding-top: 2%;
+    h3 {
       display: flex;
-      justify-content: center;
-      align-items: stretch;
-      gap: 30px;
-      flex-wrap: wrap;
-      width: 100%;
-      max-width: 1200px;
-      margin: 0 auto;
+      align-items: center;
+      gap: 10px;
 
-      iframe {
-        width: 350px;
-        height: 450px;
-        border: none;
-        border-radius: 6px;
-        object-fit: cover;
-      }
-    }
-
-    .more-btn {
-      margin-top: 40px;
-      padding: 0.5cm 1cm;
-      background-color: #f4e0de;
-      border: 1px #725a58 solid;
-      font-family: "Baskervville";
-      font-size: 24px;
-      color: #725a58;
-      background-color: transparent;
-      cursor: pointer;
-      transition: 0.3s ease;
-      margin: 1px #725a58 solid;
-
-      &:hover {
-        opacity: 0.8;
-      }
-    }
-  }
-
-  /* RESPONSIVE */
-  @media (max-width: 768px) {
-    .diy-corner {
-      padding: 40px 10px;
-
-      h4 {
-        font-size: 32px;
-        margin-bottom: 30px;
-      }
-
-      .videos-container {
-        flex-wrap: nowrap;
-        gap: 20px;
-        overflow-x: auto;
-        padding-bottom: 10px;
-        iframe {
-          width: 100%;
-          height: 250px;
-        }
-      }
-
-      .more-btn {
-        font-size: 18px;
-        padding: 10px 30px;
+      .vector-icon1,
+      .vector-icon2,
+      .vector-icon3 {
+        width: 25px; // tamaño uniforme
+        height: auto;
       }
     }
   }
 }
+
+/* ================== DIY CORNER ================== */
+.diy-corner {
+  padding: 60px 20px;
+  text-align: center;
+  background-color: #fff;
+
+  h4 {
+    font-family: "Baskervville";
+    font-size: 48px;
+    color: #725a58;
+    margin-bottom: 40px;
+    letter-spacing: 2px;
+    font-weight: 300;
+  }
+
+  .videos-container {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 30px;
+    flex-wrap: wrap;
+
+    iframe {
+      width: 350px;
+      height: 450px;
+      border: none;
+      border-radius: 6px;
+      object-fit: cover;
+    }
+  }
+
+  .more-btn {
+    margin-top: 40px;
+    padding: 0.5cm 1cm;
+    font-family: "Baskervville";
+    font-size: 24px;
+    color: #725a58;
+    background-color: transparent;
+    border: 1px solid #725a58;
+    cursor: pointer;
+    transition: 0.3s ease;
+
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+}
+
+/* ================== RESPONSIVE ================== */
+@media (max-width: 1024px) {
+  .home-makeup-images {
+    gap: 30px;
+  }
+
+  .image-box-party,
+  .image-box-photoshoot,
+  .image-box-wedding {
+    width: 300px;
+    height: 400px;
+  }
+
+  .image-box-party span,
+  .image-box-photoshoot span,
+  .image-box-wedding span {
+    font-size: 50px;
+  }
+
+  .makeup101-container {
+    gap: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .home-makeup-images,
+  .makeup101-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .image-box-party,
+  .image-box-photoshoot,
+  .image-box-wedding {
+    width: 250px;
+    height: 350px;
+  }
+
+  .image-box-party span,
+  .image-box-photoshoot span,
+  .image-box-wedding span {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 480px) {
+  .image-box-party,
+  .image-box-photoshoot,
+  .image-box-wedding {
+    width: 100%;
+    height: auto;
+  }
+
+  .image-box-party span,
+  .image-box-photoshoot span,
+  .image-box-wedding span {
+    font-size: 30px;
+    bottom: 5px;
+  }
+
+  .makeup101-container {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  h3 {
+    font-size: 16px;
+
+    .vector-icon1,
+    .vector-icon2,
+    .vector-icon3 {
+      width: 20px;
+    }
+  }
+
+  .diy-corner h4 {
+    font-size: 32px;
+  }
+
+  .videos-container iframe {
+    width: 100%;
+    height: 200px;
+  }
+
+  .more-btn {
+    font-size: 16px;
+    padding: 10px 20px;
+  }
+}
+
+/* ================== PEQUEÑOS DISPOSITIVOS (320px) ================== */
+@media (max-width: 360px) {
+  .home-makeup-header h1 {
+    font-size: 28px;
+  }
+
+  .home-makeup-header p {
+    font-size: 16px;
+  }
+
+  .image-box-party span,
+  .image-box-photoshoot span,
+  .image-box-wedding span {
+    font-size: 25px;
+  }
+
+  .makeup101-container h3 {
+    font-size: 14px;
+  }
+
+  .diy-corner h4 {
+    font-size: 28px;
+  }
+
+  .videos-container iframe {
+    height: 150px;
+  }
+
+  .more-btn {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+}
+
 
 #task_5_home_form {
   .canvas {
