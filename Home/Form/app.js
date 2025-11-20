@@ -18,6 +18,47 @@ const callDetailInput = document.querySelector("#call-detail");
 const whatsappDetailInput = document.querySelector("#whatsapp-detail");
 const smsDetailInput = document.querySelector("#sms-detail");
 
+// EmailJS function
+function sendMail(event) {
+  event.preventDefault();
+
+  // const event_type = document.querySelector('input[name="event-type"]:checked').value;
+  // const eventTypeName = {
+  //   wedding: "wedding",
+  //   party: "party",
+  //   photoshoot: "photoshoot"
+  // };
+  const eventTypeValue = document.querySelector(`input[name="event-type"]:checked`).value;
+
+
+  const method = document.querySelector('input[name="method"]:checked').value;
+  const methodDetailId = {
+    call: "call-detail",
+    whatsapp: "whatsapp-detail",
+    sms: "sms-detail",
+    email: "email-detail"
+  };
+  const contactValue = document.querySelector(`#${methodDetailId[method]}`).value;
+
+
+  const parms = {
+    event_type: eventTypeValue,
+    date: document.querySelector('#date').value,
+    time: document.querySelector('#time').value,
+    name: document.querySelector('#name').value,
+    method: method,
+    contact: contactValue
+  };
+
+  emailjs.send("web1_team_four", "template_5djf82j", parms)
+    .then(() => {
+      alert("Your form has been sent successfully!");
+    })
+    .catch((error) => {
+      console.error("EmailJS Error:", error);
+    });
+}
+
 weddingRadioButton.addEventListener("click", (event) => {
   event.preventDefault();
   weddingLogo.classList.add("checked");
@@ -206,7 +247,7 @@ if (form) {
       console.log("- contact-code:", contactCode);
     }
     console.log("- contact-detail:", contactDetail);
-    alert("Your form is submitted!!");
+    // alert("Your form is submitted!!");
     form.reset();
   });
 }
