@@ -29,6 +29,19 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+
+    <!-- EmailJS is added below -->
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function(){
+          emailjs.init({
+            publicKey: "bn-ahlbLG1ybVuqvD",
+          });
+        })();
+    </script>
+
   </head>
   <body>
     <div class="box">
@@ -439,6 +452,7 @@
                   <legend>Event Date</legend>
                   <input
                     name="date"
+                    id="date"
                     type="date"
                     class="event-schedule"
                     required="true"
@@ -452,10 +466,10 @@
                 <fieldset class="event-time">
                   <legend>Event Time</legend>
                   <select id="time" name="time">
-                    <option value="full-day">Full day</option>
-                    <option value="day-time">Morning</option>
-                    <option value="night-time">Afternoon</option>
-                    <option value="night-time">Evening</option>
+                    <option value="full-day" name="time">Full day</option>
+                    <option value="day-time" name="time">Morning</option>
+                    <option value="night-time" name="time">Afternoon</option>
+                    <option value="night-time" name="time">Evening</option>
                   </select>
                   <div class="not-decided">
                     <input type="checkbox" id="time-not-decided" />
@@ -584,7 +598,6 @@
                       class="detail"
                       id="email-detail"
                       placeholder="Your email address"
-                      name="email"
                       name="contact-detail"
                       pattern=".*@.*\..*"
                     />
@@ -592,7 +605,7 @@
                 </div>
               </fieldset>
             </section>
-            <button type="submit" class="submit-button">Submit</button>
+            <button type="submit" class="submit-button" onclick="sendMail(event)">Submit</button>
           </form>
         </div>
         <script src="./Home/Form/app.js"></script>
